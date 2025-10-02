@@ -1,0 +1,24 @@
+# Node.js/NPM Dependencies (see package.json)
+# This is a Next.js/React TypeScript project
+# Install with: npm install
+
+# Main dependencies:
+# - react@19.1.0
+# - react-dom@19.1.0
+# - next@15.5.4
+# - framer-motion@^12.23.22
+# - lucide-react@^0.544.0
+
+# Dev dependencies:
+# - typescript@^5
+# - @types/node@^20
+# - @types/react@^19
+# - @types/react-dom@^19
+# - @tailwindcss/postcss@^4
+# - tailwindcss@^4
+# - eslint@^9
+# - eslint-config-next@15.5.4
+# - @eslint/eslintrc@^3
+
+# Note: This project uses npm/node package manager.
+# To install all dependencies, run: npm install
