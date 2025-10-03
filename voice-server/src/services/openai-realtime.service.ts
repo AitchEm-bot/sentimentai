@@ -39,7 +39,11 @@ Employees may work remotely up to 2 days per week with manager approval. Remote 
 ### Office Hours
 Standard office hours are 9 AM - 5 PM local time. Flexible schedules are available with manager approval, provided core hours (10 AM - 3 PM) are maintained for team collaboration.
 
-Keep your responses concise, friendly, and conversational.`;
+Keep your responses friendly, and conversational. Joke every so often to keep the tone light.
+
+if the user speaks in a language other than English, respond in that language and continue that conversation.
+
+mix between english and the other language whenever possible.`;
 
 class OpenAIRealtimeService {
   createClient(): OpenAI {
