@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mic, Sparkles, Loader2 } from "lucide-react";
+import { Sparkles, Mic } from "lucide-react";
 import { useVoiceChat } from "@/hooks/useVoiceChat";
 import { useAudioVisualizer } from "@/hooks/useAudioVisualizer";
-import VoiceWave from "@/components/VoiceWave";
+import VoiceRipples from "@/components/VoiceRipples";
 
 export default function Hero() {
   const {
@@ -21,10 +21,11 @@ export default function Hero() {
     isConnected,
     audioContext,
     mediaStream,
+    aiAudioVolume,
   } = useVoiceChat();
 
   // Get real-time audio volume for visualizer
-  const volume = useAudioVisualizer(audioContext, mediaStream);
+  const userVolume = useAudioVisualizer(audioContext, mediaStream);
 
   const handleMicClick = () => {
     if (voiceState === 'idle') {
@@ -37,27 +38,17 @@ export default function Hero() {
     }
   };
 
-  const getButtonStyle = () => {
-    switch (voiceState) {
-      case 'listening':
-        return 'from-red-400 to-red-600';
-      case 'processing':
-        return 'from-yellow-400 to-yellow-600';
-      case 'speaking':
-        return 'from-green-400 to-green-600';
-      default:
-        return 'from-orange-400 to-blue-500';
-    }
-  };
-
-  // Calculate scale based on volume for listening state
+  // Calculate scale based on volume
   const getButtonScale = () => {
     if (voiceState === 'listening') {
-      // Scale from 1.0 to 1.15 based on volume
-      return 1 + (volume * 0.15);
+      // Scale from 1.0 to 1.15 based on user's voice volume
+      return 1 + (userVolume * 0.15);
     }
     return 1;
   };
+
+  // Determine if gradient should animate
+  const shouldAnimateGradient = voiceState === 'listening';
 
   const getStatusText = () => {
     switch (voiceState) {
@@ -69,19 +60,6 @@ export default function Hero() {
         return 'Speaking...';
       default:
         return 'Click to start talking';
-    }
-  };
-
-  const getIcon = () => {
-    switch (voiceState) {
-      case 'listening':
-        return <Mic className="w-12 h-12 text-white" />;
-      case 'processing':
-        return <Loader2 className="w-12 h-12 text-white animate-spin" />;
-      case 'speaking':
-        return <VoiceWave />;
-      default:
-        return <Mic className="w-12 h-12 text-white" />;
     }
   };
 
@@ -161,9 +139,13 @@ export default function Hero() {
               stiffness: 300,
               damping: 20,
             }}
-            className={`relative w-32 h-32 rounded-full bg-gradient-to-br ${getButtonStyle()} shadow-2xl shadow-orange-200 flex items-center justify-center hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
+            className={`relative w-32 h-32 rounded-full bg-gradient-to-br from-orange-400 to-blue-500 shadow-2xl shadow-orange-200 flex items-center justify-center hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${shouldAnimateGradient ? 'animate-gradient' : ''}`}
+            style={{
+              backgroundSize: shouldAnimateGradient ? '200% 200%' : '100% 100%',
+            }}
           >
-            {getIcon()}
+            {voiceState === 'speaking' && <VoiceRipples volume={aiAudioVolume} />}
+            <Mic className="w-12 h-12 text-white z-10 relative" />
           </motion.button>
 
           {/* Status Text */}

@@ -28,6 +28,8 @@ export function useVoiceChat() {
   const playbackContextRef = useRef<AudioContext | null>(null);
   const playbackSourceRef = useRef<AudioBufferSourceNode | null>(null);
   const isPlayingRef = useRef<boolean>(false);
+  const playbackAnalyserRef = useRef<AnalyserNode | null>(null);
+  const [aiAudioVolume, setAiAudioVolume] = useState<number>(0);
 
   // Initialize WebSocket client
   useEffect(() => {
@@ -127,16 +129,9 @@ export function useVoiceChat() {
         break;
 
       case 'response_complete':
-        // AI response is complete
+        // AI response is complete (text generation done)
+        // But audio might still be playing, so don't transition yet
         isPlayingRef.current = false;
-
-        // In continuous mode, automatically go back to listening
-        // Set a small delay to ensure audio finishes playing
-        setTimeout(() => {
-          if (voiceState === 'speaking') {
-            setVoiceState('listening');
-          }
-        }, 500);
         break;
 
       case 'audio_end':
@@ -284,6 +279,50 @@ export function useVoiceChat() {
         playbackContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)({
           sampleRate: 24000,
         });
+
+        // Create analyser for AI audio volume tracking
+        const analyser = playbackContextRef.current.createAnalyser();
+        analyser.fftSize = 256;
+        analyser.smoothingTimeConstant = 0.8;
+        analyser.connect(playbackContextRef.current.destination);
+        playbackAnalyserRef.current = analyser;
+
+        // Start volume monitoring
+        const dataArray = new Uint8Array(analyser.frequencyBinCount);
+        let silenceFrames = 0;
+        const SILENCE_THRESHOLD = 0.02; // Very low volume threshold
+        const SILENCE_FRAMES_NEEDED = 30; // ~0.5 seconds of silence at 60fps
+
+        const updateAiVolume = () => {
+          if (!playbackAnalyserRef.current) {
+            setAiAudioVolume(0);
+            return;
+          }
+
+          playbackAnalyserRef.current.getByteFrequencyData(dataArray);
+          const sum = dataArray.reduce((acc, val) => acc + val, 0);
+          const average = sum / dataArray.length;
+          const normalizedVolume = Math.min(average / 128, 1);
+
+          setAiAudioVolume(normalizedVolume);
+
+          // Check for silence to detect when audio playback is truly done
+          if (normalizedVolume < SILENCE_THRESHOLD) {
+            silenceFrames++;
+            if (silenceFrames >= SILENCE_FRAMES_NEEDED && !isPlayingRef.current) {
+              // Audio has been silent for long enough and server said it's done
+              console.log('Audio playback complete, transitioning to listening');
+              setAiAudioVolume(0);
+              setVoiceState('listening');
+              return; // Stop monitoring
+            }
+          } else {
+            silenceFrames = 0; // Reset if we detect sound
+          }
+
+          requestAnimationFrame(updateAiVolume);
+        };
+        updateAiVolume();
       }
 
       const playbackContext = playbackContextRef.current;
@@ -313,7 +352,13 @@ export function useVoiceChat() {
         // Play the chunk
         const source = playbackContext.createBufferSource();
         source.buffer = audioBuffer;
-        source.connect(playbackContext.destination);
+
+        // Connect to analyser for volume tracking
+        if (playbackAnalyserRef.current) {
+          source.connect(playbackAnalyserRef.current);
+        } else {
+          source.connect(playbackContext.destination);
+        }
 
         // Schedule to start right after previous chunk
         const startTime = Math.max(currentTime, playbackContext.currentTime);
@@ -342,6 +387,7 @@ export function useVoiceChat() {
 
   const stopAudioPlayback = () => {
     isPlayingRef.current = false;
+    setAiAudioVolume(0);
 
     if (playbackSourceRef.current) {
       try {
@@ -357,6 +403,7 @@ export function useVoiceChat() {
       playbackContextRef.current = null;
     }
 
+    playbackAnalyserRef.current = null;
     playbackBufferRef.current = [];
   };
 
@@ -381,5 +428,6 @@ export function useVoiceChat() {
     // Expose audio context and stream for visualizer
     audioContext: audioContextRef.current,
     mediaStream: mediaStreamRef.current,
+    aiAudioVolume,
   };
 }
