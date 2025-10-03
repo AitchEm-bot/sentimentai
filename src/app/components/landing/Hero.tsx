@@ -2,8 +2,10 @@
 
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mic, Square, Sparkles, Loader2 } from "lucide-react";
+import { Mic, Sparkles, Loader2 } from "lucide-react";
 import { useVoiceChat } from "@/hooks/useVoiceChat";
+import { useAudioVisualizer } from "@/hooks/useAudioVisualizer";
+import VoiceWave from "@/components/VoiceWave";
 
 export default function Hero() {
   const {
@@ -17,7 +19,12 @@ export default function Hero() {
     interrupt,
     clearConversation,
     isConnected,
+    audioContext,
+    mediaStream,
   } = useVoiceChat();
+
+  // Get real-time audio volume for visualizer
+  const volume = useAudioVisualizer(audioContext, mediaStream);
 
   const handleMicClick = () => {
     if (voiceState === 'idle') {
@@ -33,14 +40,23 @@ export default function Hero() {
   const getButtonStyle = () => {
     switch (voiceState) {
       case 'listening':
-        return 'from-red-400 to-red-600 animate-pulse';
+        return 'from-red-400 to-red-600';
       case 'processing':
         return 'from-yellow-400 to-yellow-600';
       case 'speaking':
-        return 'from-green-400 to-green-600 animate-pulse';
+        return 'from-green-400 to-green-600';
       default:
         return 'from-orange-400 to-blue-500';
     }
+  };
+
+  // Calculate scale based on volume for listening state
+  const getButtonScale = () => {
+    if (voiceState === 'listening') {
+      // Scale from 1.0 to 1.15 based on volume
+      return 1 + (volume * 0.15);
+    }
+    return 1;
   };
 
   const getStatusText = () => {
@@ -63,7 +79,7 @@ export default function Hero() {
       case 'processing':
         return <Loader2 className="w-12 h-12 text-white animate-spin" />;
       case 'speaking':
-        return <Square className="w-8 h-8 text-white" />;
+        return <VoiceWave />;
       default:
         return <Mic className="w-12 h-12 text-white" />;
     }
@@ -134,13 +150,21 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="flex flex-col items-center gap-4"
         >
-          <button
+          <motion.button
             onClick={handleMicClick}
             disabled={!isConnected}
-            className={`relative w-32 h-32 rounded-full bg-gradient-to-br ${getButtonStyle()} shadow-2xl shadow-orange-200 flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
+            animate={{
+              scale: getButtonScale(),
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 20,
+            }}
+            className={`relative w-32 h-32 rounded-full bg-gradient-to-br ${getButtonStyle()} shadow-2xl shadow-orange-200 flex items-center justify-center hover:scale-105 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed`}
           >
             {getIcon()}
-          </button>
+          </motion.button>
 
           {/* Status Text */}
           <div className="text-lg font-medium text-gray-700">

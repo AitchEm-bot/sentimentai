@@ -378,5 +378,8 @@ export function useVoiceChat() {
     interrupt,
     clearConversation,
     isConnected: connectionStatus === 'connected',
+    // Expose audio context and stream for visualizer
+    audioContext: audioContextRef.current,
+    mediaStream: mediaStreamRef.current,
   };
 }
