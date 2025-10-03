@@ -1,5 +1,5 @@
 # 🚀 Quick Start Guide - Voice Chat with OpenAI Realtime API
-
+Note that after the discovery of 4o-realtime, this architecture was deemed unneccessary. Will work on an opensource architecture later using this guide.
 ## 3-Step Setup
 
 ### 1. Get OpenAI API Key

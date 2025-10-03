@@ -1,5 +1,5 @@
 # 🎙️ SentimentAI Voice Chat - RAG Implementation
-
+Note that after the discovery of 4o-realtime, this architecture was deemed unneccessary. Will work on an opensource architecture later using this guide.
 ## Overview
 
 This is a complete RAG (Retrieval-Augmented Generation) voice communication system integrated into the SentimentAI website. It allows users to have natural voice conversations with an AI assistant that answers questions based on company policies stored in a Supabase vector database.
