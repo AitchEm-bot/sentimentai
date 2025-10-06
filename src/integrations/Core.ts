@@ -19,17 +19,30 @@ export async function SendEmail(data: {
   company?: string;
   message: string;
 }): Promise<{ success: boolean; message: string }> {
-  // Placeholder for email integration
-  // In production, this would use a service like SendGrid, AWS SES, etc.
-  console.log("SendEmail called with:", data);
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-  // Simulate API response
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve({
-        success: true,
-        message: "Email sent successfully"
-      });
-    }, 1000);
-  });
+    const result = await response.json();
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.error || 'Failed to send email');
+    }
+
+    return {
+      success: true,
+      message: result.message || 'Email sent successfully',
+    };
+  } catch (error) {
+    console.error('Error sending email:', error);
+    return {
+      success: false,
+      message: error instanceof Error ? error.message : 'Failed to send email',
+    };
+  }
 }

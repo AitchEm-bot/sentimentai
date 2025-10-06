@@ -205,10 +205,10 @@ export default function ContactCTA() {
           <div className="mt-8 pt-8 border-t border-gray-200 text-center">
             <p className="text-gray-600 mb-2">Prefer email?</p>
             <a
-              href="mailto:investors@sentimentai.com"
+              href="mailto:sentimentAI1@outlook.com"
               className="text-lg font-medium bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-transparent hover:from-orange-600 hover:to-blue-600 cursor-pointer hover:font-semibold transition-all"
             >
-              investors@sentimentai.com
+              sentimentAI1@outlook.com
             </a>
           </div>
         </motion.div>

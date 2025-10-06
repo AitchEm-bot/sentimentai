@@ -1,9 +1,125 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { callAnalyses, getSentimentScore, getSentimentLabel, extractEmotions } from "@/data/callAnalyses";
 
+// Typing effect hook
+function useTypingEffect(text: string, speed: number = 20) {
+  const [displayedText, setDisplayedText] = useState("");
+  const [isComplete, setIsComplete] = useState(false);
+
+  useEffect(() => {
+    setDisplayedText("");
+    setIsComplete(false);
+    let index = 0;
+
+    const timer = setInterval(() => {
+      if (index < text.length) {
+        setDisplayedText(text.slice(0, index + 1));
+        index++;
+      } else {
+        setIsComplete(true);
+        clearInterval(timer);
+      }
+    }, speed);
+
+    return () => clearInterval(timer);
+  }, [text, speed]);
+
+  return { displayedText, isComplete };
+}
+
+// Typing text component
+function TypingText({ text, speed = 20 }: { text: string; speed?: number }) {
+  const { displayedText, isComplete } = useTypingEffect(text, speed);
+
+  return (
+    <>
+      {displayedText}
+      {!isComplete && <span className="animate-pulse">|</span>}
+    </>
+  );
+}
+
+// Staggered list typing component
+function TypingList({ items, speed = 20, delay = 500 }: { items: string[]; speed?: number; delay?: number }) {
+  const [visibleItems, setVisibleItems] = useState<number>(0);
+
+  useEffect(() => {
+    setVisibleItems(0);
+    const timer = setTimeout(() => {
+      if (visibleItems < items.length) {
+        setVisibleItems(prev => prev + 1);
+      }
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [items]);
+
+  useEffect(() => {
+    if (visibleItems < items.length) {
+      const timer = setTimeout(() => {
+        setVisibleItems(prev => prev + 1);
+      }, delay);
+      return () => clearTimeout(timer);
+    }
+  }, [visibleItems, items.length, delay]);
+
+  return (
+    <>
+      {items.slice(0, visibleItems).map((item, idx) => (
+        <li key={idx} className="flex items-start gap-2">
+          <span className="text-orange-500 mt-1">•</span>
+          <span className="text-gray-600 text-sm">
+            {idx === visibleItems - 1 ? <TypingText text={item} speed={speed} /> : item}
+          </span>
+        </li>
+      ))}
+    </>
+  );
+}
+
+// Recommendations typing component (with blue bullet)
+function TypingListRecommendations({ items, speed = 20, delay = 500 }: { items: string[]; speed?: number; delay?: number }) {
+  const [visibleItems, setVisibleItems] = useState<number>(0);
+
+  useEffect(() => {
+    setVisibleItems(0);
+    const timer = setTimeout(() => {
+      if (visibleItems < items.length) {
+        setVisibleItems(prev => prev + 1);
+      }
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [items]);
+
+  useEffect(() => {
+    if (visibleItems < items.length) {
+      const timer = setTimeout(() => {
+        setVisibleItems(prev => prev + 1);
+      }, delay);
+      return () => clearTimeout(timer);
+    }
+  }, [visibleItems, items.length, delay]);
+
+  return (
+    <>
+      {items.slice(0, visibleItems).map((item, idx) => (
+        <li key={idx} className="flex items-start gap-2">
+          <span className="text-blue-500 mt-1">•</span>
+          <span className="text-gray-600 text-sm">
+            {idx === visibleItems - 1 ? <TypingText text={item} speed={speed} /> : item}
+          </span>
+        </li>
+      ))}
+    </>
+  );
+}
+
 export default function DemoShowcase() {
   const [selectedDemo, setSelectedDemo] = useState(0);
+  const [animatedScore, setAnimatedScore] = useState(0);
+  const [animatedSentiment, setAnimatedSentiment] = useState(0);
 
   // Transform real analysis data into demo format
   const angryAnalysis = callAnalyses.angry;
@@ -85,6 +201,39 @@ export default function DemoShowcase() {
 
   const currentDemo = demos[selectedDemo];
 
+  // Animate progress bars when demo changes
+  useEffect(() => {
+    setAnimatedScore(0);
+    setAnimatedSentiment(0);
+
+    const scoreInterval = setInterval(() => {
+      setAnimatedScore(prev => {
+        const target = currentDemo.agentScore;
+        if (prev < target) {
+          return Math.min(prev + 0.2, target);
+        }
+        clearInterval(scoreInterval);
+        return target;
+      });
+    }, 20);
+
+    const sentimentInterval = setInterval(() => {
+      setAnimatedSentiment(prev => {
+        const target = currentDemo.sentimentScore;
+        if (prev < target) {
+          return Math.min(prev + 2, target);
+        }
+        clearInterval(sentimentInterval);
+        return target;
+      });
+    }, 20);
+
+    return () => {
+      clearInterval(scoreInterval);
+      clearInterval(sentimentInterval);
+    };
+  }, [selectedDemo, currentDemo.agentScore, currentDemo.sentimentScore]);
+
   return (
     <section id="demo" className="py-32 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -165,12 +314,12 @@ export default function DemoShowcase() {
             <div className="mb-6 bg-white rounded-xl p-4 border border-gray-200">
               <div className="flex items-center justify-between mb-2">
                 <h4 className="text-sm font-semibold text-gray-700">Agent Performance</h4>
-                <span className="text-2xl font-bold text-gray-900">{currentDemo.agentScore}/10</span>
+                <span className="text-2xl font-bold text-gray-900">{animatedScore.toFixed(1)}/10</span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
                 <div
-                  className={`h-2 ${currentDemo.barColor} rounded-full transition-all duration-500`}
-                  style={{ width: `${currentDemo.agentScore * 10}%` }}
+                  className={`h-2 ${currentDemo.barColor} rounded-full transition-all duration-300`}
+                  style={{ width: `${animatedScore * 10}%` }}
                 />
               </div>
               <div className="flex items-center gap-2">
@@ -204,8 +353,8 @@ export default function DemoShowcase() {
               </div>
               <div className="relative w-full bg-gray-200 rounded-full h-3">
                 <div
-                  className={`absolute h-3 ${currentDemo.barColor} rounded-full transition-all duration-500`}
-                  style={{ width: `${currentDemo.sentimentScore}%` }}
+                  className={`absolute h-3 ${currentDemo.barColor} rounded-full transition-all duration-300`}
+                  style={{ width: `${animatedSentiment}%` }}
                 ></div>
               </div>
             </div>
@@ -224,19 +373,16 @@ export default function DemoShowcase() {
             {/* Summary */}
             <div className="mb-6">
               <h4 className="text-sm font-semibold text-gray-700 mb-2">Summary</h4>
-              <p className="text-gray-600 leading-relaxed">{currentDemo.analysis.summary}</p>
+              <p className="text-gray-600 leading-relaxed">
+                <TypingText text={currentDemo.analysis.summary} speed={15} />
+              </p>
             </div>
 
             {/* Key Points */}
             <div className="mb-6">
               <h4 className="text-sm font-semibold text-gray-700 mb-3">Key Points</h4>
               <ul className="space-y-2">
-                {currentDemo.analysis.keyPoints.map((point, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-orange-500 mt-1">•</span>
-                    <span className="text-gray-600 text-sm">{point}</span>
-                  </li>
-                ))}
+                <TypingList items={currentDemo.analysis.keyPoints} speed={10} delay={800} />
               </ul>
             </div>
 
@@ -244,12 +390,7 @@ export default function DemoShowcase() {
             <div>
               <h4 className="text-sm font-semibold text-gray-700 mb-3">Recommended Actions</h4>
               <ul className="space-y-2">
-                {currentDemo.analysis.recommendations.map((rec, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-blue-500 mt-1">•</span>
-                    <span className="text-gray-600 text-sm">{rec}</span>
-                  </li>
-                ))}
+                <TypingListRecommendations items={currentDemo.analysis.recommendations} speed={10} delay={800} />
               </ul>
             </div>
           </motion.div>

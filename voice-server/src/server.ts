@@ -4,6 +4,7 @@ import { WebSocketServer, WebSocket } from 'ws';
 import cors from 'cors';
 import config from './config/env';
 import openaiRealtimeService from './services/openai-realtime.service';
+import contactRouter from './routes/contact';
 
 const app = express();
 const server = createServer(app);
@@ -20,6 +21,9 @@ app.use(express.json());
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', message: 'Voice server is running' });
 });
+
+// Contact API route
+app.use('/api', contactRouter);
 
 // Create WebSocket server
 const wss = new WebSocketServer({ server, path: '/ws/voice-chat' });

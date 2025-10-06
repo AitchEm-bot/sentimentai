@@ -24,7 +24,7 @@ export default function Benefits() {
     },
     {
       icon: Users,
-      title: "89% Agent",
+      title: "20% Agent",
       subtitle: "Satisfaction Rate",
       description: "AI assistance reduces stress and improves agent performance and morale",
     },
