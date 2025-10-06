@@ -16,7 +16,6 @@ export default function Hero() {
     currentAiText,
     startListening,
     stopListening,
-    interrupt,
     clearConversation,
     isConnected,
     audioContext,
@@ -234,7 +233,7 @@ export default function Hero() {
                 key={index}
                 className="px-3 py-1 bg-gray-100 rounded-full text-xs text-gray-600"
               >
-                "{question}"
+                &ldquo;{question}&rdquo;
               </span>
             ))}
           </div>

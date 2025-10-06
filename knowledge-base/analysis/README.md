@@ -1,0 +1,174 @@
+# Call Analysis Results
+
+This directory contains AI-powered analysis of customer service call recordings using **AssemblyAI** for speaker diarization and **Gemma3** (via Ollama) for intelligent analysis.
+
+## 📊 Analysis Overview
+
+| Call Type | Duration | Customer Satisfaction | Agent Performance | Handled Well |
+|-----------|----------|----------------------|-------------------|--------------|
+| **Angry** | 3m 57s | Low (3/10) | 6/10 | ❌ No |
+| **Happy** | 2m 51s | Very High (9/10) | 9/10 | ✅ Yes |
+| **Normal** | 9m 27s | High (6/10) | 7/10 | ✅ Yes |
+
+## 📁 Files
+
+- `angry_analysis.json` - Complete analysis of frustrated customer call
+- `happy_analysis.json` - Complete analysis of satisfied customer call
+- `normal_analysis.json` - Complete analysis of standard customer call
+- `all_calls_summary.json` - Combined summary of all three calls
+
+## 🔍 What's Included
+
+Each analysis file contains:
+
+### 1. **Call Metadata**
+- Filename and scenario type
+- Duration in seconds
+- Overall emotional ranking (1-10)
+- Agent performance score (1-10)
+- Customer satisfaction level
+
+### 2. **Speaker-Diarized Transcript**
+Complete conversation with:
+- Speaker labels (A/B)
+- Full text of each utterance
+- Precise timestamps (start/end in milliseconds)
+
+### 3. **AI Analysis**
+Detailed assessment including:
+
+- **Customer Emotional State**: Analysis of the customer's emotional journey throughout the call
+- **Agent Performance**: Evaluation of empathy, professionalism, problem-solving skills
+- **Key Moments**: Critical conversation points with timestamps and descriptions
+- **Overall Verdict**: Summary assessment of call quality
+- **Handled Well**: Boolean indicating if agent performed adequately
+- **Recommendations**: 3-5 specific suggestions for improvement
+
+### 4. **Sentiment Analysis**
+Raw sentiment scores from AssemblyAI (when available)
+
+## 🎯 Usage
+
+### Running the Analysis
+
+From the `voice-server` directory:
+
+```bash
+npm run analyze-calls
+```
+
+Or directly:
+
+```bash
+npx tsx scripts/analyze-calls.ts
+```
+
+### Prerequisites
+
+1. **AssemblyAI API Key**: Set in `voice-server/.env`
+   ```
+   ASSEMBLYAI_API_KEY=your_key_here
+   ```
+
+2. **Ollama with Gemma3**: Ensure Ollama is running locally
+   ```bash
+   ollama pull gemma3
+   ollama serve
+   ```
+
+3. **Audio Files**: Place MP3 files in `knowledge-base/` directory:
+   - `Angry_Call.mp3`
+   - `Happy_Call.mp3`
+   - `Normal_Call.mp3`
+
+## 🔧 Technical Details
+
+### Speaker Diarization
+- Powered by **AssemblyAI**
+- Automatic speaker separation (no pre-training needed)
+- Timestamp precision to milliseconds
+- Supports unlimited speakers
+
+### AI Analysis
+- **Model**: Gemma3 (via Ollama)
+- **Analysis Type**: Qualitative customer service evaluation
+- **Metrics**: Emotional ranking, agent scores, satisfaction levels
+- **Format**: Structured JSON output
+
+### Pipeline Flow
+
+1. **Upload**: Audio files sent to AssemblyAI
+2. **Transcription**: Speech-to-text with speaker labels
+3. **Diarization**: Speaker separation and timeline mapping
+4. **Analysis**: Gemma3 processes transcript for insights
+5. **Output**: JSON files with complete analysis
+
+## 📝 Example Analysis Structure
+
+```json
+{
+  "filename": "Happy_Call.mp3",
+  "scenario": "happy",
+  "duration_seconds": 171,
+  "emotional_ranking": 9,
+  "agent_score": 9,
+  "customer_satisfaction": "Very High",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "Thank you for calling...",
+      "timestamp": { "start": 0, "end": 2500 }
+    }
+  ],
+  "analysis": {
+    "customer_emotional_state": "Customer began excited...",
+    "agent_performance": "Agent demonstrated excellent...",
+    "key_moments": ["Initial greeting...", "Resolution..."],
+    "overall_verdict": "Exemplary customer service...",
+    "handled_well": true,
+    "recommendations": ["Document as training example..."]
+  }
+}
+```
+
+## 🎨 Next Steps (Website Integration)
+
+To showcase these analyses on the SentimentAI website:
+
+1. **Extract Audio Snippets**: Create 30-second clips from each call
+2. **Build Showcase Component**: Display audio player + analysis data
+3. **Add Visual Indicators**: Emotion gauges, satisfaction meters
+4. **Create Case Studies**: Use analyses as real-world examples
+
+## 📊 Performance Metrics
+
+- **Transcription Accuracy**: ~95%+ (AssemblyAI)
+- **Speaker Separation**: 2 speakers detected in all calls
+- **Analysis Time**: ~30-60 seconds per call
+- **Model**: Gemma3 (3.3GB local model)
+
+## 🛠️ Troubleshooting
+
+**Ollama Connection Issues**
+```bash
+# Check if Ollama is running
+ollama list
+
+# Start Ollama service
+ollama serve
+```
+
+**AssemblyAI Errors**
+- Verify API key in `.env`
+- Check file paths are correct
+- Ensure audio files are valid MP3 format
+
+**Analysis Quality**
+- Longer calls provide better context
+- Clear audio improves transcription accuracy
+- Multiple speakers work best with distinct voices
+
+---
+
+Generated by SentimentAI Call Analysis Pipeline
+Powered by AssemblyAI + Gemma3

@@ -1,31 +1,38 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Play, Volume2 } from "lucide-react";
+import { callAnalyses, getSentimentScore, getSentimentLabel, extractEmotions } from "@/data/callAnalyses";
 
 export default function DemoShowcase() {
   const [selectedDemo, setSelectedDemo] = useState(0);
 
+  // Transform real analysis data into demo format
+  const angryAnalysis = callAnalyses.angry;
+  const happyAnalysis = callAnalyses.happy;
+  const normalAnalysis = callAnalyses.normal;
+
+  // Helper to format key moments
+  const formatKeyMoments = (moments: (string | { timestamp?: string; description?: string })[]): string[] => {
+    return moments.slice(0, 4).map(moment =>
+      typeof moment === 'string' ? moment : moment.description || ''
+    );
+  };
+
   const demos = [
     {
-      title: "Frustrated Customer - Product Issue",
-      sentiment: "Negative",
-      sentimentScore: 25,
-      emotions: ["Frustration", "Disappointment", "Urgency"],
+      title: "Frustrated Customer - Service Outage",
+      sentiment: getSentimentLabel(angryAnalysis.emotional_ranking),
+      sentimentScore: getSentimentScore(angryAnalysis.emotional_ranking),
+      emotions: extractEmotions(angryAnalysis),
       analysis: {
-        summary: "Customer expressing strong dissatisfaction with product malfunction. Tone indicates high frustration and urgency for resolution.",
-        keyPoints: [
-          "Product stopped working after 2 weeks",
-          "Previous support interactions were unhelpful",
-          "Customer considering switching to competitor",
-          "Emotional state: Highly frustrated but seeking solution"
-        ],
-        recommendations: [
-          "Escalate to senior support immediately",
-          "Offer expedited replacement",
-          "Provide discount on next purchase as goodwill gesture"
-        ]
+        summary: angryAnalysis.analysis.customer_emotional_state.slice(0, 200) + "...",
+        keyPoints: formatKeyMoments(angryAnalysis.analysis.key_moments),
+        recommendations: angryAnalysis.analysis.recommendations.slice(0, 3)
       },
-      gradientFrom: "from-orange-400",
+      audioFile: "/audio/Angry_Call_snippet.mp3",
+      duration: Math.floor(angryAnalysis.duration_seconds / 60) + ":" + String(angryAnalysis.duration_seconds % 60).padStart(2, '0'),
+      agentScore: angryAnalysis.agent_score,
+      handledWell: angryAnalysis.analysis.handled_well,
+      gradientFrom: "from-red-400",
       gradientTo: "to-orange-600",
       sentimentBg: "bg-red-50",
       sentimentText: "text-red-600",
@@ -33,52 +40,42 @@ export default function DemoShowcase() {
       barColor: "bg-red-500"
     },
     {
-      title: "Satisfied Customer - Service Praise",
-      sentiment: "Positive",
-      sentimentScore: 92,
-      emotions: ["Gratitude", "Satisfaction", "Trust"],
+      title: "Satisfied Customer - Anniversary Reservation",
+      sentiment: getSentimentLabel(happyAnalysis.emotional_ranking),
+      sentimentScore: getSentimentScore(happyAnalysis.emotional_ranking),
+      emotions: extractEmotions(happyAnalysis),
       analysis: {
-        summary: "Customer expressing appreciation for excellent service. Positive tone throughout with high satisfaction indicators.",
-        keyPoints: [
-          "Issue resolved quickly and professionally",
-          "Agent was patient and knowledgeable",
-          "Customer feels valued and heard",
-          "Emotional state: Very satisfied and loyal"
-        ],
-        recommendations: [
-          "Request customer testimonial",
-          "Recognize agent for excellent service",
-          "Consider customer for loyalty program"
-        ]
+        summary: happyAnalysis.analysis.customer_emotional_state.slice(0, 200) + "...",
+        keyPoints: formatKeyMoments(happyAnalysis.analysis.key_moments),
+        recommendations: happyAnalysis.analysis.recommendations.slice(0, 3)
       },
-      gradientFrom: "from-orange-400",
-      gradientTo: "to-blue-500",
+      audioFile: "/audio/Happy_Call_snippet.mp3",
+      duration: Math.floor(happyAnalysis.duration_seconds / 60) + ":" + String(happyAnalysis.duration_seconds % 60).padStart(2, '0'),
+      agentScore: happyAnalysis.agent_score,
+      handledWell: happyAnalysis.analysis.handled_well,
+      gradientFrom: "from-green-400",
+      gradientTo: "to-emerald-500",
       sentimentBg: "bg-green-50",
       sentimentText: "text-green-600",
       sentimentBorder: "border-green-200",
       barColor: "bg-green-500"
     },
     {
-      title: "Neutral Inquiry - Billing Question",
-      sentiment: "Neutral",
-      sentimentScore: 58,
-      emotions: ["Curiosity", "Patience", "Professionalism"],
+      title: "Standard Customer - General Inquiry",
+      sentiment: getSentimentLabel(normalAnalysis.emotional_ranking),
+      sentimentScore: getSentimentScore(normalAnalysis.emotional_ranking),
+      emotions: extractEmotions(normalAnalysis),
       analysis: {
-        summary: "Standard billing inquiry with neutral emotional tone. Customer is patient and seeking information.",
-        keyPoints: [
-          "Simple question about billing cycle",
-          "Customer is calm and cooperative",
-          "No signs of dissatisfaction",
-          "Emotional state: Neutral, information-seeking"
-        ],
-        recommendations: [
-          "Provide clear, detailed explanation",
-          "Share billing documentation",
-          "Offer to set up billing reminders"
-        ]
+        summary: normalAnalysis.analysis.customer_emotional_state.slice(0, 200) + "...",
+        keyPoints: formatKeyMoments(normalAnalysis.analysis.key_moments),
+        recommendations: normalAnalysis.analysis.recommendations.slice(0, 3)
       },
-      gradientFrom: "from-orange-400",
-      gradientTo: "to-blue-500",
+      audioFile: "/audio/Normal_Call_snippet.mp3",
+      duration: Math.floor(normalAnalysis.duration_seconds / 60) + ":" + String(normalAnalysis.duration_seconds % 60).padStart(2, '0'),
+      agentScore: normalAnalysis.agent_score,
+      handledWell: normalAnalysis.analysis.handled_well,
+      gradientFrom: "from-blue-400",
+      gradientTo: "to-cyan-500",
       sentimentBg: "bg-blue-50",
       sentimentText: "text-blue-600",
       sentimentBorder: "border-blue-200",
@@ -147,19 +144,39 @@ export default function DemoShowcase() {
               </span>
             </div>
 
-            {/* Audio Player Mockup */}
+            {/* Real Audio Player */}
             <div className="bg-gray-50 rounded-xl p-6 mb-6">
-              <div className="flex items-center gap-4 mb-4">
-                <button className={`w-16 h-16 rounded-full bg-gradient-to-br ${currentDemo.gradientFrom} ${currentDemo.gradientTo} flex items-center justify-center shadow-lg hover:scale-105 transition-transform cursor-pointer`}>
-                  <Play className="w-6 h-6 text-white ml-1" />
-                </button>
-                <div className="flex-1">
-                  <p className="font-semibold text-gray-900 mb-2">{currentDemo.title}</p>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-orange-400 to-blue-500 h-2 rounded-full" style={{ width: "0%" }}></div>
-                  </div>
-                </div>
-                <Volume2 className="w-6 h-6 text-gray-400" />
+              <p className="font-semibold text-gray-900 mb-3">{currentDemo.title}</p>
+              <audio
+                controls
+                className="w-full mb-2"
+                src={currentDemo.audioFile}
+                preload="metadata"
+              >
+                Your browser does not support the audio element.
+              </audio>
+              <div className="flex justify-between text-xs text-gray-500">
+                <span>30-second excerpt</span>
+                <span>Full call: {currentDemo.duration}</span>
+              </div>
+            </div>
+
+            {/* Agent Performance Score */}
+            <div className="mb-6 bg-white rounded-xl p-4 border border-gray-200">
+              <div className="flex items-center justify-between mb-2">
+                <h4 className="text-sm font-semibold text-gray-700">Agent Performance</h4>
+                <span className="text-2xl font-bold text-gray-900">{currentDemo.agentScore}/10</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2 mb-2">
+                <div
+                  className={`h-2 ${currentDemo.barColor} rounded-full transition-all duration-500`}
+                  style={{ width: `${currentDemo.agentScore * 10}%` }}
+                />
+              </div>
+              <div className="flex items-center gap-2">
+                <span className={`inline-block px-2 py-1 rounded text-xs font-medium ${currentDemo.handledWell ? 'bg-green-100 text-green-700' : 'bg-orange-100 text-orange-700'}`}>
+                  {currentDemo.handledWell ? '✓ Handled Well' : '⚠ Needs Improvement'}
+                </span>
               </div>
             </div>
 

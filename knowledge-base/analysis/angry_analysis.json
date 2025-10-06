@@ -1,0 +1,1055 @@
+{
+  "filename": "Angry_Call.mp3",
+  "scenario": "angry",
+  "duration_seconds": 237,
+  "emotional_ranking": 3,
+  "agent_score": 6,
+  "customer_satisfaction": "Low",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "Hello.",
+      "timestamp": {
+        "start": 480,
+        "end": 880
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Thank you for. Thank you for calling OmniTech support. My name is Marco. How may I help you today?",
+      "timestamp": {
+        "start": 4880,
+        "end": 8880
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Yeah, hi, Marco. How are you today?",
+      "timestamp": {
+        "start": 9600,
+        "end": 11200
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "I'm good. How are you, ma'? Am?",
+      "timestamp": {
+        "start": 11360,
+        "end": 12720
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "I'm not really good. I have a problem with your service. The Internet got caught and I'm working from home. I've called three times. Every time, your friends previously gave me different timing for the Internet to come back. I just want to confirm when the Internet is coming back.",
+      "timestamp": {
+        "start": 13520,
+        "end": 30080
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "I understand you're upset, ma'.",
+      "timestamp": {
+        "start": 30590,
+        "end": 31830
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Am.",
+      "timestamp": {
+        "start": 31830,
+        "end": 31990
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "I'm sorry to hear you're experiencing an issue with your service. Can I please have the phone number on your account, associated with your account so I can pull up details?",
+      "timestamp": {
+        "start": 31990,
+        "end": 39550
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Yeah, it's 8824.",
+      "timestamp": {
+        "start": 40110,
+        "end": 42830
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "All right.",
+      "timestamp": {
+        "start": 46270,
+        "end": 46750
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "8824.",
+      "timestamp": {
+        "start": 46750,
+        "end": 48922
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "7653. 7653. Yes.",
+      "timestamp": {
+        "start": 49404,
+        "end": 54350
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "One second. So, 882-476-5391.",
+      "timestamp": {
+        "start": 55710,
+        "end": 59430
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Yes. Okay, so it's 882-476-5391. And the name is.",
+      "timestamp": {
+        "start": 59430,
+        "end": 64340
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "This is Sarah.",
+      "timestamp": {
+        "start": 66180,
+        "end": 67220
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Sarah. Sarah Thompson. Am I right?",
+      "timestamp": {
+        "start": 67380,
+        "end": 69780
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Yeah.",
+      "timestamp": {
+        "start": 70500,
+        "end": 70980
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "All right. Thank you. Ms. Thompson, I see your account here. Yes, I do see a documented service interruption in your area due to a fiber line cut. It looks like the estimated time for resolution is 8pm Eastern by today.",
+      "timestamp": {
+        "start": 71700,
+        "end": 91210
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Well, I've been given three different timing. I hope this time is finite because I've been suffering from this for the last 48 hours. And I'm working from home and, you know, all my work collapsed and I have to respond to people and get in touch with people, meeting to attend and all these things. It's not like, you know, it's very frustrating.",
+      "timestamp": {
+        "start": 92250,
+        "end": 111050
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "I understand. And let me just check again. Okay. Here's what the field team is reporting right now. They've identified the specific point of failure and they've already begun splicing new cable. And based on the complexity of the repair, I can see that the new, and I assure you, firm estimate for the full restoration is within the next four hours by 8pm Eastern.",
+      "timestamp": {
+        "start": 111940,
+        "end": 135380
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Okay, then why the application keeps shifting the timing like, you know, it's like a moving target kept on moving from time to time. It's not like, you know, maybe I will hang up with you now, and then again, they will change the timing to different timing.",
+      "timestamp": {
+        "start": 136180,
+        "end": 150120
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "It is true the application has seen some glitches and I understand. Ms. Thompson, once your service is fully restored, we will be happily processing an adjustment to your bill. And we would happily give you a $25 inconvenience credit for the trouble that you've gone through. Would that be okay?",
+      "timestamp": {
+        "start": 150600,
+        "end": 168620
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Yeah, that's fine. As long as the Internet will be back soon. You said what time?",
+      "timestamp": {
+        "start": 170460,
+        "end": 173500
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "8Pm 8pm today? Yes, ma'. Am.",
+      "timestamp": {
+        "start": 173500,
+        "end": 175740
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "So that is after 4 hours from now?",
+      "timestamp": {
+        "start": 176620,
+        "end": 178620
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "That's correct.",
+      "timestamp": {
+        "start": 179580,
+        "end": 180460
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Okay. And you will reimburse $40?",
+      "timestamp": {
+        "start": 183820,
+        "end": 186300
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Yeah, 25, ma'. Am. And we will deduct any Internet usage in between these, these hours and these days that you haven't used the Internet from your bill for this month.",
+      "timestamp": {
+        "start": 186700,
+        "end": 196790
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Okay.",
+      "timestamp": {
+        "start": 197590,
+        "end": 198230
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "All right. Is there anything else?",
+      "timestamp": {
+        "start": 198950,
+        "end": 200230
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "And if the cable did not get connected by ATV and what. What should I do?",
+      "timestamp": {
+        "start": 200390,
+        "end": 204230
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Please call us again on and. But I assure you it will be connected by atm. But if by any chance it did not get connected, please do call us again and we will be happily assisting you for the problem.",
+      "timestamp": {
+        "start": 204630,
+        "end": 215670
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Well, I'll try to call you. If it is not connected, I won't be happy. But I'll try to contact you.",
+      "timestamp": {
+        "start": 217510,
+        "end": 222550
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Alright, no worries, man. We're here for you.",
+      "timestamp": {
+        "start": 222920,
+        "end": 224720
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "Okay? Okay.",
+      "timestamp": {
+        "start": 224720,
+        "end": 226120
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Is there anything else I may help you with?",
+      "timestamp": {
+        "start": 226360,
+        "end": 227960
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "No, thank you. Marco.",
+      "timestamp": {
+        "start": 228360,
+        "end": 229560
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Thank you for calling Omnitech Support. Have a good evening.",
+      "timestamp": {
+        "start": 229720,
+        "end": 232200
+      }
+    }
+  ],
+  "analysis": {
+    "customer_emotional_state": "The customer begins the call in a state of significant frustration and anger, stemming from a 48-hour service interruption and conflicting information received from previous support agents. Throughout the call, the customer’s anger is intermittently expressed through phrases like \"I'm not really good,\" \"It's very frustrating,\" and repeated questioning about the timeline. Initially, the customer’s frustration is palpable, driven by the disruption to their work. As the agent attempts to provide a resolution and offer compensation, the customer’s anger decreases slightly, but remains present, primarily focused on the reliability of the information and the potential for future disruptions. The agent's attempts to reassure the customer and offer a credit seem to mitigate the customer's anger to some degree, but the underlying anxiety about the situation persists. The customer shifts from purely angry to somewhat resigned and skeptical.",
+    "agent_performance": "The agent, Marco, demonstrates a basic level of professionalism and empathy, but lacks a proactive and confident approach to problem-solving. He initially acknowledges the customer’s frustration and apologizes, which is a positive start. However, his responses often feel reactive rather than proactive. He repeatedly uses phrases like \"I understand,\" which, while appropriate, feels somewhat formulaic. While he offers a $25 credit, he could have been more assertive in explaining the root cause of the issue and the steps being taken. He also struggles to confidently address the customer’s concerns about the shifting timeline, repeatedly referring to the field team’s report without clearly explaining the complexity of the repair. His language is occasionally imprecise (\"man,\" \"ma'\"), which could be perceived as unprofessional. He fails to establish a clear point of control and consistently validates the information provided by the field team, avoiding taking ownership of the issue beyond confirming the details.",
+    "key_moments": [
+      {
+        "timestamp": "0:30",
+        "description": "Customer’s initial outburst regarding the 48-hour outage and conflicting information establishes the core of their frustration."
+      },
+      {
+        "timestamp": "1:45",
+        "description": "The agent's repeated statement, 'I understand,' despite the customer’s continued skepticism, highlights a lack of proactive problem-solving."
+      },
+      {
+        "timestamp": "2:50",
+        "description": "The agent's offer of a $25 credit is presented without a clear explanation of the rationale, minimizing its impact and potentially fueling the customer’s sense of being undervalued."
+      }
+    ],
+    "overall_verdict": "The call was handled adequately but could have been significantly improved through more proactive communication, confident problem-solving, and a stronger focus on establishing customer trust. While the agent met the basic requirements of the interaction, the customer’s initial frustration was not fully resolved due to a lack of ownership and a somewhat disjointed approach.",
+    "handled_well": false,
+    "recommendations": [
+      "Implement a script that prompts the agent to actively investigate the root cause of the service disruption and clearly explain the technical complexities to the customer.",
+      "Train agents to confidently take ownership of the issue and provide a firm timeline for resolution, coupled with regular updates to the customer.",
+      "Encourage agents to proactively offer solutions beyond just compensation (e.g., priority scheduling for future services).",
+      "Implement a system for agents to cross-reference information and address conflicting reports immediately.",
+      "Train agents to use more precise and confident language, avoiding phrases like 'I understand' without context."
+    ]
+  },
+  "raw_sentiment": [
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Hello, thank you for.",
+      "start": 480,
+      "end": 5520,
+      "confidence": 0.9061215
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Thank you for calling OmniTech support.",
+      "start": 5520,
+      "end": 7040,
+      "confidence": 0.9565095
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "My name is Marco.",
+      "start": 7040,
+      "end": 7880,
+      "confidence": 0.7680722
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "How may I help you today?",
+      "start": 7880,
+      "end": 8880,
+      "confidence": 0.73509586
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Yeah, hi, Marco.",
+      "start": 9600,
+      "end": 10520,
+      "confidence": 0.6507235
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "How are you today?",
+      "start": 10520,
+      "end": 11200,
+      "confidence": 0.8718535
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "I'm good.",
+      "start": 11360,
+      "end": 11880,
+      "confidence": 0.9117158
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "How are you, ma'?",
+      "start": 11880,
+      "end": 12520,
+      "confidence": 0.8123876
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Am?",
+      "start": 12520,
+      "end": 12720,
+      "confidence": 0.6475025
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "I'm not really good.",
+      "start": 13520,
+      "end": 14880,
+      "confidence": 0.92402095
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "I have a problem with your service.",
+      "start": 15040,
+      "end": 18080,
+      "confidence": 0.97420293
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "The Internet got caught and I'm working from home.",
+      "start": 18800,
+      "end": 21600,
+      "confidence": 0.6790543
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "I've called three times.",
+      "start": 22000,
+      "end": 23200,
+      "confidence": 0.7386702
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Every time, your friends previously gave me different timing for the Internet to come back.",
+      "start": 23200,
+      "end": 27640,
+      "confidence": 0.82068443
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "I just want to confirm when the Internet is coming back.",
+      "start": 27640,
+      "end": 30080,
+      "confidence": 0.7708321
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "I understand you're upset, ma'.",
+      "start": 30590,
+      "end": 31830,
+      "confidence": 0.5753745
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Am.",
+      "start": 31830,
+      "end": 31990,
+      "confidence": 0.59136444
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "B",
+      "text": "I'm sorry to hear you're experiencing an issue with your service.",
+      "start": 31990,
+      "end": 34390,
+      "confidence": 0.8896918
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Can I please have the phone number on your account, associated with your account so I can pull up details?",
+      "start": 34390,
+      "end": 39550,
+      "confidence": 0.9212962
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Yeah, it's 8824.",
+      "start": 40110,
+      "end": 42830,
+      "confidence": 0.76171887
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "All right.",
+      "start": 46270,
+      "end": 46750,
+      "confidence": 0.48966992
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "8824.",
+      "start": 46750,
+      "end": 48922,
+      "confidence": 0.568598
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "7653.",
+      "start": 49404,
+      "end": 51335,
+      "confidence": 0.5982071
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "7653.",
+      "start": 51818,
+      "end": 53990,
+      "confidence": 0.5982071
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Yes.",
+      "start": 53990,
+      "end": 54350,
+      "confidence": 0.4610389
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "One second.",
+      "start": 55710,
+      "end": 56270,
+      "confidence": 0.64591223
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "So, 882-476-5391.",
+      "start": 56590,
+      "end": 59430,
+      "confidence": 0.8187438
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Yes.",
+      "start": 59430,
+      "end": 59870,
+      "confidence": 0.4610389
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Okay, so it's 882-476-5391.",
+      "start": 60020,
+      "end": 62900,
+      "confidence": 0.84832186
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "And the name is.",
+      "start": 63460,
+      "end": 64340,
+      "confidence": 0.63377935
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "This is Sarah.",
+      "start": 66180,
+      "end": 67220,
+      "confidence": 0.61900705
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Sarah.",
+      "start": 67380,
+      "end": 68020,
+      "confidence": 0.6728636
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Sarah Thompson.",
+      "start": 68420,
+      "end": 69300,
+      "confidence": 0.7606293
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Am I right?",
+      "start": 69300,
+      "end": 69780,
+      "confidence": 0.7640509
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Yeah.",
+      "start": 70500,
+      "end": 70980,
+      "confidence": 0.5491449
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "All right.",
+      "start": 71700,
+      "end": 72260,
+      "confidence": 0.48966992
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Thank you.",
+      "start": 72900,
+      "end": 73340,
+      "confidence": 0.8529648
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Ms. Thompson, I see your account here.",
+      "start": 73340,
+      "end": 75300,
+      "confidence": 0.8484373
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "B",
+      "text": "Yes, I do see a documented service interruption in your area due to a fiber line cut.",
+      "start": 76580,
+      "end": 81700,
+      "confidence": 0.62992233
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "It looks like the estimated time for resolution is 8pm Eastern by today.",
+      "start": 82260,
+      "end": 91210,
+      "confidence": 0.91073924
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Well, I've been given three different timing.",
+      "start": 92250,
+      "end": 94170,
+      "confidence": 0.7461905
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "I hope this time is finite because I've been suffering from this for the last 48 hours.",
+      "start": 94170,
+      "end": 98890,
+      "confidence": 0.9316618
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "And I'm working from home and, you know, all my work collapsed and I have to respond to people and get in touch with people, meeting to attend and all these things.",
+      "start": 99930,
+      "end": 108410,
+      "confidence": 0.6169806
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "It's not like, you know, it's very frustrating.",
+      "start": 108410,
+      "end": 111050,
+      "confidence": 0.94326365
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "I understand.",
+      "start": 111940,
+      "end": 112420,
+      "confidence": 0.55007
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "And let me just check again.",
+      "start": 113060,
+      "end": 115380,
+      "confidence": 0.792183
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Okay.",
+      "start": 117060,
+      "end": 117580,
+      "confidence": 0.58435166
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Here's what the field team is reporting right now.",
+      "start": 117580,
+      "end": 119620,
+      "confidence": 0.9150194
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "B",
+      "text": "They've identified the specific point of failure and they've already begun splicing new cable.",
+      "start": 119700,
+      "end": 125300,
+      "confidence": 0.517094
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "And based on the complexity of the repair, I can see that the new, and I assure you, firm estimate for the full restoration is within the next four hours by 8pm Eastern.",
+      "start": 125540,
+      "end": 135380,
+      "confidence": 0.79715705
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Okay, then why the application keeps shifting the timing like, you know, it's like a moving target kept on moving from time to time.",
+      "start": 136180,
+      "end": 143880,
+      "confidence": 0.69257796
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "It's not like, you know, maybe I will hang up with you now, and then again, they will change the timing to different timing.",
+      "start": 143880,
+      "end": 150120,
+      "confidence": 0.49492747
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "It is true the application has seen some glitches and I understand.",
+      "start": 150600,
+      "end": 153960,
+      "confidence": 0.5999096
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Ms. Thompson, once your service is fully restored, we will be happily processing an adjustment to your bill.",
+      "start": 154120,
+      "end": 161720,
+      "confidence": 0.7931696
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "And we would happily give you a $25 inconvenience credit for the trouble that you've gone through.",
+      "start": 162360,
+      "end": 167800,
+      "confidence": 0.5630671
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Would that be okay?",
+      "start": 167900,
+      "end": 168620,
+      "confidence": 0.8423002
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Yeah, that's fine.",
+      "start": 170460,
+      "end": 171220,
+      "confidence": 0.6754953
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "As long as the Internet will be back soon.",
+      "start": 171220,
+      "end": 172740,
+      "confidence": 0.71391976
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "You said what time?",
+      "start": 172740,
+      "end": 173500,
+      "confidence": 0.7979323
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "8pm 8pm today?",
+      "start": 173500,
+      "end": 175020,
+      "confidence": 0.9305895
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Yes, ma'.",
+      "start": 175020,
+      "end": 175540,
+      "confidence": 0.6182737
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Am.",
+      "start": 175540,
+      "end": 175740,
+      "confidence": 0.59136444
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "So that is after 4 hours from now?",
+      "start": 176620,
+      "end": 178620,
+      "confidence": 0.9150633
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "That's correct.",
+      "start": 179580,
+      "end": 180460,
+      "confidence": 0.5089255
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Okay.",
+      "start": 183820,
+      "end": 184340,
+      "confidence": 0.58435166
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "And you will reimburse $40?",
+      "start": 184340,
+      "end": 186300,
+      "confidence": 0.7379037
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Yeah, 25, ma'.",
+      "start": 186700,
+      "end": 188900,
+      "confidence": 0.75647
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Am.",
+      "start": 188900,
+      "end": 188980,
+      "confidence": 0.59136444
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "And we will deduct any Internet usage in between these, these hours and these days that you haven't used the Internet from your bill for this month.",
+      "start": 188980,
+      "end": 196790,
+      "confidence": 0.6757864
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Okay.",
+      "start": 197590,
+      "end": 198230,
+      "confidence": 0.58435166
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "All right.",
+      "start": 198950,
+      "end": 199390,
+      "confidence": 0.48966992
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Is there anything else?",
+      "start": 199390,
+      "end": 200230,
+      "confidence": 0.7880044
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "And if the cable did not get connected by ATV and what.",
+      "start": 200390,
+      "end": 203350,
+      "confidence": 0.632965
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "What should I do?",
+      "start": 203350,
+      "end": 204230,
+      "confidence": 0.83812886
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Please call us again on and.",
+      "start": 204630,
+      "end": 206670,
+      "confidence": 0.8120458
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "But I assure you it will be connected by atm.",
+      "start": 206670,
+      "end": 209589,
+      "confidence": 0.7968479
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "But if by any chance it did not get connected, please do call us again and we will be happily assisting you for the problem.",
+      "start": 209750,
+      "end": 215670,
+      "confidence": 0.58536035
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Well, I'll try to call you.",
+      "start": 217510,
+      "end": 219310,
+      "confidence": 0.8398769
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "If it is not connected, I won't be happy.",
+      "start": 219310,
+      "end": 221190,
+      "confidence": 0.87385637
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "But I'll try to contact you.",
+      "start": 221190,
+      "end": 222550,
+      "confidence": 0.8369091
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Alright, no worries, man.",
+      "start": 222920,
+      "end": 223920,
+      "confidence": 0.5265267
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "We're here for you.",
+      "start": 223920,
+      "end": 224720,
+      "confidence": 0.79481333
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Okay?",
+      "start": 224720,
+      "end": 225240,
+      "confidence": 0.71238583
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Okay.",
+      "start": 225480,
+      "end": 226120,
+      "confidence": 0.58435166
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Is there anything else I may help you with?",
+      "start": 226360,
+      "end": 227960,
+      "confidence": 0.90587705
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "No, thank you.",
+      "start": 228360,
+      "end": 229120,
+      "confidence": 0.6126039
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Marco.",
+      "start": 229120,
+      "end": 229560,
+      "confidence": 0.5192065
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Thank you for calling Omnitech Support.",
+      "start": 229720,
+      "end": 231320,
+      "confidence": 0.9425793
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Have a good evening.",
+      "start": 231320,
+      "end": 232200,
+      "confidence": 0.96848273
+    }
+  ]
+}

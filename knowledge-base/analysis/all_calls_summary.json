@@ -1,0 +1,3189 @@
+[
+  {
+    "filename": "Angry_Call.mp3",
+    "scenario": "angry",
+    "duration_seconds": 237,
+    "emotional_ranking": 3,
+    "agent_score": 6,
+    "customer_satisfaction": "Low",
+    "transcript": [
+      {
+        "speaker": "A",
+        "text": "Hello.",
+        "timestamp": {
+          "start": 480,
+          "end": 880
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you for. Thank you for calling OmniTech support. My name is Marco. How may I help you today?",
+        "timestamp": {
+          "start": 4880,
+          "end": 8880
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, hi, Marco. How are you today?",
+        "timestamp": {
+          "start": 9600,
+          "end": 11200
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I'm good. How are you, ma'? Am?",
+        "timestamp": {
+          "start": 11360,
+          "end": 12720
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "I'm not really good. I have a problem with your service. The Internet got caught and I'm working from home. I've called three times. Every time, your friends previously gave me different timing for the Internet to come back. I just want to confirm when the Internet is coming back.",
+        "timestamp": {
+          "start": 13520,
+          "end": 30080
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I understand you're upset, ma'.",
+        "timestamp": {
+          "start": 30590,
+          "end": 31830
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Am.",
+        "timestamp": {
+          "start": 31830,
+          "end": 31990
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I'm sorry to hear you're experiencing an issue with your service. Can I please have the phone number on your account, associated with your account so I can pull up details?",
+        "timestamp": {
+          "start": 31990,
+          "end": 39550
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, it's 8824.",
+        "timestamp": {
+          "start": 40110,
+          "end": 42830
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "All right.",
+        "timestamp": {
+          "start": 46270,
+          "end": 46750
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "8824.",
+        "timestamp": {
+          "start": 46750,
+          "end": 48922
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "7653. 7653. Yes.",
+        "timestamp": {
+          "start": 49404,
+          "end": 54350
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "One second. So, 882-476-5391.",
+        "timestamp": {
+          "start": 55710,
+          "end": 59430
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Yes. Okay, so it's 882-476-5391. And the name is.",
+        "timestamp": {
+          "start": 59430,
+          "end": 64340
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "This is Sarah.",
+        "timestamp": {
+          "start": 66180,
+          "end": 67220
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Sarah. Sarah Thompson. Am I right?",
+        "timestamp": {
+          "start": 67380,
+          "end": 69780
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah.",
+        "timestamp": {
+          "start": 70500,
+          "end": 70980
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "All right. Thank you. Ms. Thompson, I see your account here. Yes, I do see a documented service interruption in your area due to a fiber line cut. It looks like the estimated time for resolution is 8pm Eastern by today.",
+        "timestamp": {
+          "start": 71700,
+          "end": 91210
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I've been given three different timing. I hope this time is finite because I've been suffering from this for the last 48 hours. And I'm working from home and, you know, all my work collapsed and I have to respond to people and get in touch with people, meeting to attend and all these things. It's not like, you know, it's very frustrating.",
+        "timestamp": {
+          "start": 92250,
+          "end": 111050
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I understand. And let me just check again. Okay. Here's what the field team is reporting right now. They've identified the specific point of failure and they've already begun splicing new cable. And based on the complexity of the repair, I can see that the new, and I assure you, firm estimate for the full restoration is within the next four hours by 8pm Eastern.",
+        "timestamp": {
+          "start": 111940,
+          "end": 135380
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, then why the application keeps shifting the timing like, you know, it's like a moving target kept on moving from time to time. It's not like, you know, maybe I will hang up with you now, and then again, they will change the timing to different timing.",
+        "timestamp": {
+          "start": 136180,
+          "end": 150120
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "It is true the application has seen some glitches and I understand. Ms. Thompson, once your service is fully restored, we will be happily processing an adjustment to your bill. And we would happily give you a $25 inconvenience credit for the trouble that you've gone through. Would that be okay?",
+        "timestamp": {
+          "start": 150600,
+          "end": 168620
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yeah, that's fine. As long as the Internet will be back soon. You said what time?",
+        "timestamp": {
+          "start": 170460,
+          "end": 173500
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "8Pm 8pm today? Yes, ma'. Am.",
+        "timestamp": {
+          "start": 173500,
+          "end": 175740
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "So that is after 4 hours from now?",
+        "timestamp": {
+          "start": 176620,
+          "end": 178620
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "That's correct.",
+        "timestamp": {
+          "start": 179580,
+          "end": 180460
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. And you will reimburse $40?",
+        "timestamp": {
+          "start": 183820,
+          "end": 186300
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, 25, ma'. Am. And we will deduct any Internet usage in between these, these hours and these days that you haven't used the Internet from your bill for this month.",
+        "timestamp": {
+          "start": 186700,
+          "end": 196790
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay.",
+        "timestamp": {
+          "start": 197590,
+          "end": 198230
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "All right. Is there anything else?",
+        "timestamp": {
+          "start": 198950,
+          "end": 200230
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "And if the cable did not get connected by ATV and what. What should I do?",
+        "timestamp": {
+          "start": 200390,
+          "end": 204230
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Please call us again on and. But I assure you it will be connected by atm. But if by any chance it did not get connected, please do call us again and we will be happily assisting you for the problem.",
+        "timestamp": {
+          "start": 204630,
+          "end": 215670
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Well, I'll try to call you. If it is not connected, I won't be happy. But I'll try to contact you.",
+        "timestamp": {
+          "start": 217510,
+          "end": 222550
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Alright, no worries, man. We're here for you.",
+        "timestamp": {
+          "start": 222920,
+          "end": 224720
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay? Okay.",
+        "timestamp": {
+          "start": 224720,
+          "end": 226120
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Is there anything else I may help you with?",
+        "timestamp": {
+          "start": 226360,
+          "end": 227960
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "No, thank you. Marco.",
+        "timestamp": {
+          "start": 228360,
+          "end": 229560
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you for calling Omnitech Support. Have a good evening.",
+        "timestamp": {
+          "start": 229720,
+          "end": 232200
+        }
+      }
+    ],
+    "analysis": {
+      "customer_emotional_state": "The customer begins the call in a state of significant frustration and anger, stemming from a 48-hour service interruption and conflicting information received from previous support agents. Throughout the call, the customer’s anger is intermittently expressed through phrases like \"I'm not really good,\" \"It's very frustrating,\" and repeated questioning about the timeline. Initially, the customer’s frustration is palpable, driven by the disruption to their work. As the agent attempts to provide a resolution and offer compensation, the customer’s anger decreases slightly, but remains present, primarily focused on the reliability of the information and the potential for future disruptions. The agent's attempts to reassure the customer and offer a credit seem to mitigate the customer's anger to some degree, but the underlying anxiety about the situation persists. The customer shifts from purely angry to somewhat resigned and skeptical.",
+      "agent_performance": "The agent, Marco, demonstrates a basic level of professionalism and empathy, but lacks a proactive and confident approach to problem-solving. He initially acknowledges the customer’s frustration and apologizes, which is a positive start. However, his responses often feel reactive rather than proactive. He repeatedly uses phrases like \"I understand,\" which, while appropriate, feels somewhat formulaic. While he offers a $25 credit, he could have been more assertive in explaining the root cause of the issue and the steps being taken. He also struggles to confidently address the customer’s concerns about the shifting timeline, repeatedly referring to the field team’s report without clearly explaining the complexity of the repair. His language is occasionally imprecise (\"man,\" \"ma'\"), which could be perceived as unprofessional. He fails to establish a clear point of control and consistently validates the information provided by the field team, avoiding taking ownership of the issue beyond confirming the details.",
+      "key_moments": [
+        {
+          "timestamp": "0:30",
+          "description": "Customer’s initial outburst regarding the 48-hour outage and conflicting information establishes the core of their frustration."
+        },
+        {
+          "timestamp": "1:45",
+          "description": "The agent's repeated statement, 'I understand,' despite the customer’s continued skepticism, highlights a lack of proactive problem-solving."
+        },
+        {
+          "timestamp": "2:50",
+          "description": "The agent's offer of a $25 credit is presented without a clear explanation of the rationale, minimizing its impact and potentially fueling the customer’s sense of being undervalued."
+        }
+      ],
+      "overall_verdict": "The call was handled adequately but could have been significantly improved through more proactive communication, confident problem-solving, and a stronger focus on establishing customer trust. While the agent met the basic requirements of the interaction, the customer’s initial frustration was not fully resolved due to a lack of ownership and a somewhat disjointed approach.",
+      "handled_well": false,
+      "recommendations": [
+        "Implement a script that prompts the agent to actively investigate the root cause of the service disruption and clearly explain the technical complexities to the customer.",
+        "Train agents to confidently take ownership of the issue and provide a firm timeline for resolution, coupled with regular updates to the customer.",
+        "Encourage agents to proactively offer solutions beyond just compensation (e.g., priority scheduling for future services).",
+        "Implement a system for agents to cross-reference information and address conflicting reports immediately.",
+        "Train agents to use more precise and confident language, avoiding phrases like 'I understand' without context."
+      ]
+    },
+    "raw_sentiment": [
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Hello, thank you for.",
+        "start": 480,
+        "end": 5520,
+        "confidence": 0.9061215
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Thank you for calling OmniTech support.",
+        "start": 5520,
+        "end": 7040,
+        "confidence": 0.9565095
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "My name is Marco.",
+        "start": 7040,
+        "end": 7880,
+        "confidence": 0.7680722
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "How may I help you today?",
+        "start": 7880,
+        "end": 8880,
+        "confidence": 0.73509586
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Yeah, hi, Marco.",
+        "start": 9600,
+        "end": 10520,
+        "confidence": 0.6507235
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How are you today?",
+        "start": 10520,
+        "end": 11200,
+        "confidence": 0.8718535
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "I'm good.",
+        "start": 11360,
+        "end": 11880,
+        "confidence": 0.9117158
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "How are you, ma'?",
+        "start": 11880,
+        "end": 12520,
+        "confidence": 0.8123876
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Am?",
+        "start": 12520,
+        "end": 12720,
+        "confidence": 0.6475025
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "I'm not really good.",
+        "start": 13520,
+        "end": 14880,
+        "confidence": 0.92402095
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "I have a problem with your service.",
+        "start": 15040,
+        "end": 18080,
+        "confidence": 0.97420293
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "The Internet got caught and I'm working from home.",
+        "start": 18800,
+        "end": 21600,
+        "confidence": 0.6790543
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I've called three times.",
+        "start": 22000,
+        "end": 23200,
+        "confidence": 0.7386702
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Every time, your friends previously gave me different timing for the Internet to come back.",
+        "start": 23200,
+        "end": 27640,
+        "confidence": 0.82068443
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I just want to confirm when the Internet is coming back.",
+        "start": 27640,
+        "end": 30080,
+        "confidence": 0.7708321
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I understand you're upset, ma'.",
+        "start": 30590,
+        "end": 31830,
+        "confidence": 0.5753745
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Am.",
+        "start": 31830,
+        "end": 31990,
+        "confidence": 0.59136444
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I'm sorry to hear you're experiencing an issue with your service.",
+        "start": 31990,
+        "end": 34390,
+        "confidence": 0.8896918
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Can I please have the phone number on your account, associated with your account so I can pull up details?",
+        "start": 34390,
+        "end": 39550,
+        "confidence": 0.9212962
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Yeah, it's 8824.",
+        "start": 40110,
+        "end": 42830,
+        "confidence": 0.76171887
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "All right.",
+        "start": 46270,
+        "end": 46750,
+        "confidence": 0.48966992
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "8824.",
+        "start": 46750,
+        "end": 48922,
+        "confidence": 0.568598
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "7653.",
+        "start": 49404,
+        "end": 51335,
+        "confidence": 0.5982071
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "7653.",
+        "start": 51818,
+        "end": 53990,
+        "confidence": 0.5982071
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yes.",
+        "start": 53990,
+        "end": 54350,
+        "confidence": 0.4610389
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "One second.",
+        "start": 55710,
+        "end": 56270,
+        "confidence": 0.64591223
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So, 882-476-5391.",
+        "start": 56590,
+        "end": 59430,
+        "confidence": 0.8187438
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yes.",
+        "start": 59430,
+        "end": 59870,
+        "confidence": 0.4610389
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Okay, so it's 882-476-5391.",
+        "start": 60020,
+        "end": 62900,
+        "confidence": 0.84832186
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And the name is.",
+        "start": 63460,
+        "end": 64340,
+        "confidence": 0.63377935
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "This is Sarah.",
+        "start": 66180,
+        "end": 67220,
+        "confidence": 0.61900705
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Sarah.",
+        "start": 67380,
+        "end": 68020,
+        "confidence": 0.6728636
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Sarah Thompson.",
+        "start": 68420,
+        "end": 69300,
+        "confidence": 0.7606293
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Am I right?",
+        "start": 69300,
+        "end": 69780,
+        "confidence": 0.7640509
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Yeah.",
+        "start": 70500,
+        "end": 70980,
+        "confidence": 0.5491449
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "All right.",
+        "start": 71700,
+        "end": 72260,
+        "confidence": 0.48966992
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Thank you.",
+        "start": 72900,
+        "end": 73340,
+        "confidence": 0.8529648
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Ms. Thompson, I see your account here.",
+        "start": 73340,
+        "end": 75300,
+        "confidence": 0.8484373
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "Yes, I do see a documented service interruption in your area due to a fiber line cut.",
+        "start": 76580,
+        "end": 81700,
+        "confidence": 0.62992233
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "It looks like the estimated time for resolution is 8pm Eastern by today.",
+        "start": 82260,
+        "end": 91210,
+        "confidence": 0.91073924
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Well, I've been given three different timing.",
+        "start": 92250,
+        "end": 94170,
+        "confidence": 0.7461905
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "I hope this time is finite because I've been suffering from this for the last 48 hours.",
+        "start": 94170,
+        "end": 98890,
+        "confidence": 0.9316618
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "And I'm working from home and, you know, all my work collapsed and I have to respond to people and get in touch with people, meeting to attend and all these things.",
+        "start": 99930,
+        "end": 108410,
+        "confidence": 0.6169806
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "It's not like, you know, it's very frustrating.",
+        "start": 108410,
+        "end": 111050,
+        "confidence": 0.94326365
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I understand.",
+        "start": 111940,
+        "end": 112420,
+        "confidence": 0.55007
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And let me just check again.",
+        "start": 113060,
+        "end": 115380,
+        "confidence": 0.792183
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Okay.",
+        "start": 117060,
+        "end": 117580,
+        "confidence": 0.58435166
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Here's what the field team is reporting right now.",
+        "start": 117580,
+        "end": 119620,
+        "confidence": 0.9150194
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "They've identified the specific point of failure and they've already begun splicing new cable.",
+        "start": 119700,
+        "end": 125300,
+        "confidence": 0.517094
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And based on the complexity of the repair, I can see that the new, and I assure you, firm estimate for the full restoration is within the next four hours by 8pm Eastern.",
+        "start": 125540,
+        "end": 135380,
+        "confidence": 0.79715705
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, then why the application keeps shifting the timing like, you know, it's like a moving target kept on moving from time to time.",
+        "start": 136180,
+        "end": 143880,
+        "confidence": 0.69257796
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "It's not like, you know, maybe I will hang up with you now, and then again, they will change the timing to different timing.",
+        "start": 143880,
+        "end": 150120,
+        "confidence": 0.49492747
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "It is true the application has seen some glitches and I understand.",
+        "start": 150600,
+        "end": 153960,
+        "confidence": 0.5999096
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Ms. Thompson, once your service is fully restored, we will be happily processing an adjustment to your bill.",
+        "start": 154120,
+        "end": 161720,
+        "confidence": 0.7931696
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "And we would happily give you a $25 inconvenience credit for the trouble that you've gone through.",
+        "start": 162360,
+        "end": 167800,
+        "confidence": 0.5630671
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Would that be okay?",
+        "start": 167900,
+        "end": 168620,
+        "confidence": 0.8423002
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Yeah, that's fine.",
+        "start": 170460,
+        "end": 171220,
+        "confidence": 0.6754953
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "As long as the Internet will be back soon.",
+        "start": 171220,
+        "end": 172740,
+        "confidence": 0.71391976
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "You said what time?",
+        "start": 172740,
+        "end": 173500,
+        "confidence": 0.7979323
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "8pm 8pm today?",
+        "start": 173500,
+        "end": 175020,
+        "confidence": 0.9305895
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Yes, ma'.",
+        "start": 175020,
+        "end": 175540,
+        "confidence": 0.6182737
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Am.",
+        "start": 175540,
+        "end": 175740,
+        "confidence": 0.59136444
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So that is after 4 hours from now?",
+        "start": 176620,
+        "end": 178620,
+        "confidence": 0.9150633
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "That's correct.",
+        "start": 179580,
+        "end": 180460,
+        "confidence": 0.5089255
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 183820,
+        "end": 184340,
+        "confidence": 0.58435166
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "And you will reimburse $40?",
+        "start": 184340,
+        "end": 186300,
+        "confidence": 0.7379037
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Yeah, 25, ma'.",
+        "start": 186700,
+        "end": 188900,
+        "confidence": 0.75647
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Am.",
+        "start": 188900,
+        "end": 188980,
+        "confidence": 0.59136444
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And we will deduct any Internet usage in between these, these hours and these days that you haven't used the Internet from your bill for this month.",
+        "start": 188980,
+        "end": 196790,
+        "confidence": 0.6757864
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 197590,
+        "end": 198230,
+        "confidence": 0.58435166
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "All right.",
+        "start": 198950,
+        "end": 199390,
+        "confidence": 0.48966992
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Is there anything else?",
+        "start": 199390,
+        "end": 200230,
+        "confidence": 0.7880044
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "And if the cable did not get connected by ATV and what.",
+        "start": 200390,
+        "end": 203350,
+        "confidence": 0.632965
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "What should I do?",
+        "start": 203350,
+        "end": 204230,
+        "confidence": 0.83812886
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Please call us again on and.",
+        "start": 204630,
+        "end": 206670,
+        "confidence": 0.8120458
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "But I assure you it will be connected by atm.",
+        "start": 206670,
+        "end": 209589,
+        "confidence": 0.7968479
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "But if by any chance it did not get connected, please do call us again and we will be happily assisting you for the problem.",
+        "start": 209750,
+        "end": 215670,
+        "confidence": 0.58536035
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Well, I'll try to call you.",
+        "start": 217510,
+        "end": 219310,
+        "confidence": 0.8398769
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "If it is not connected, I won't be happy.",
+        "start": 219310,
+        "end": 221190,
+        "confidence": 0.87385637
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "But I'll try to contact you.",
+        "start": 221190,
+        "end": 222550,
+        "confidence": 0.8369091
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Alright, no worries, man.",
+        "start": 222920,
+        "end": 223920,
+        "confidence": 0.5265267
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "We're here for you.",
+        "start": 223920,
+        "end": 224720,
+        "confidence": 0.79481333
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay?",
+        "start": 224720,
+        "end": 225240,
+        "confidence": 0.71238583
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 225480,
+        "end": 226120,
+        "confidence": 0.58435166
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Is there anything else I may help you with?",
+        "start": 226360,
+        "end": 227960,
+        "confidence": 0.90587705
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "No, thank you.",
+        "start": 228360,
+        "end": 229120,
+        "confidence": 0.6126039
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Marco.",
+        "start": 229120,
+        "end": 229560,
+        "confidence": 0.5192065
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Thank you for calling Omnitech Support.",
+        "start": 229720,
+        "end": 231320,
+        "confidence": 0.9425793
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Have a good evening.",
+        "start": 231320,
+        "end": 232200,
+        "confidence": 0.96848273
+      }
+    ]
+  },
+  {
+    "filename": "Happy_Call.mp3",
+    "scenario": "happy",
+    "duration_seconds": 171,
+    "emotional_ranking": 9,
+    "agent_score": 9,
+    "customer_satisfaction": "Very High",
+    "transcript": [
+      {
+        "speaker": "A",
+        "text": "Good afternoon. Thank you for calling the Sandstone Beach Resort. My name is Marco and I'll be happy to assist you.",
+        "timestamp": {
+          "start": 8320,
+          "end": 12960
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Hi, Marco, my name is Anna. I'm calling because I just booked a stay for my husband and me and we're absolutely thrilled. Like your resort looks so good in the pictures.",
+        "timestamp": {
+          "start": 14560,
+          "end": 23600
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "That's wonderful, Anna. We can't wait to welcome you. I'll be happy to pull up your reservation. Can I please have your last name and confirmation number?",
+        "timestamp": {
+          "start": 23920,
+          "end": 30800
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Certainly. The. The last name is Davis and the confirmation number is SB773902.",
+        "timestamp": {
+          "start": 32000,
+          "end": 41474
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "SB77973902, right?",
+        "timestamp": {
+          "start": 42566,
+          "end": 47840
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, that's the one. It's our 10th wedding anniversary trip and we've been saving up for this. I just wanted to confirm that. That the all inclusive meal plan is definitely included as I selected that.",
+        "timestamp": {
+          "start": 48720,
+          "end": 60800
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "All right. One second, Ms. Davis. Let me just search it up. All right, thank you. Ms. Davis, sorry for interrupting you. I see it right here. You have a reservation for the Sunset Ocean view suite for five nights, checking in on June 15th, is that correct?",
+        "timestamp": {
+          "start": 60800,
+          "end": 77640
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, thank goodness. Yeah, that's perfect. We can't wait to try the seafood grill. Now, I have one little favor to ask. If possible, since it's our anniversary, is there any chance we could request a room on a higher floor? We'd love the best possible view.",
+        "timestamp": {
+          "start": 78360,
+          "end": 94060
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "That's a beautiful request for a special occasion. Wait, let me check if there's availability for the rio request for June 15th. One second. Alright. Good news, Ms. Davis. I see we have a gorgeous suite available on the 12th floor, which is one of our highest. I've gone ahead and placed a firm request for that specific room for you.",
+        "timestamp": {
+          "start": 94460,
+          "end": 116910
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Marco, that is absolutely wonderful. Thank you so much for doing that. That is going to make the trip so special.",
+        "timestamp": {
+          "start": 118270,
+          "end": 124750
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "My pleasure, Ms. Davis. We want your anniversary to be perfect as a little extra. Thank you. I've also added a note for a complimentary bottle of sparkling wine and a small dessert plate to be waiting in your room upon arrival.",
+        "timestamp": {
+          "start": 125550,
+          "end": 136670
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "You're just making my day. That is so thoughtful. Thank you again. You've been so helpful.",
+        "timestamp": {
+          "start": 137880,
+          "end": 142760
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "It's truly my job and my pleasure. We look forward to celebrating our anniversary with you and your husband. So, just to recap. Reservation is confirmed, the all inclusive plan is active and you have the 12th floor view. Request confirmed. Plus an anniversary treat. Is there anything else I can assist you with regarding your upcoming stay?",
+        "timestamp": {
+          "start": 142840,
+          "end": 160920
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "No, no, that's everything. You've been great, Marco. See you on the 15th.",
+        "timestamp": {
+          "start": 161800,
+          "end": 165770
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "We'll be waiting. Have a wonderful day, Anna.",
+        "timestamp": {
+          "start": 165850,
+          "end": 168010
+        }
+      }
+    ],
+    "analysis": {
+      "customer_emotional_state": "The customer, Anna, begins the call with excitement and anticipation regarding her upcoming anniversary trip. Her emotional state shifts positively throughout the conversation, intensifying with each positive response from the agent. Initially, she expresses gratitude and delight. As the agent proactively offers to fulfill her request for a higher floor room and adds the complimentary anniversary treats, her excitement and gratitude escalate, culminating in a very satisfied and delighted emotional state. The call ended with a feeling of being well taken care of and valued as a guest.",
+      "agent_performance": "the agent demonstrated excellent customer service skills. He was consistently professional, polite, and empathetic. He actively listened to the customer's requests, anticipated her needs, and went above and beyond to personalize her experience. His proactive approach, particularly adding the anniversary treats, significantly enhanced the customer's satisfaction. His tone was friendly and reassuring, contributing to a positive customer experience. He effectively handled the request for a room upgrade and tailored the interaction to the special occasion.",
+      "key_moments": [
+        "0:30 – 0:45: Initial exchange – Anna expresses excitement and confirms reservation details, setting a positive tone.",
+        "1:30 – 1:45: Room upgrade request and confirmation – Marco proactively offers a higher floor suite and confirms the request, immediately addressing a key customer desire.",
+        "2:15 – 2:30: Adding anniversary treats – Marco’s additional gesture elevates the experience, showcasing a commitment to making the trip memorable.",
+        "2:40 – 2:51: Recap and closing – Marco summarizes the confirmed details and expresses anticipation for the event, reinforcing a positive conclusion."
+      ],
+      "overall_verdict": "This call exemplifies excellent customer service. the agent's proactive and personalized approach resulted in a highly satisfied customer and a successful resolution to her needs.",
+      "handled_well": true,
+      "recommendations": [
+        "Implement a system for proactively identifying and offering upgrades for special occasion bookings.",
+        "Train agents to consistently anticipate additional small gestures to enhance the guest experience (e.g., suggesting local attractions or recommending favorite restaurants).",
+        "Develop a standardized script for handling room upgrade requests, ensuring agents consistently offer the best available options."
+      ]
+    },
+    "raw_sentiment": [
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Good afternoon.",
+        "start": 8320,
+        "end": 8840,
+        "confidence": 0.79168147
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Thank you for calling the Sandstone Beach Resort.",
+        "start": 8840,
+        "end": 10840,
+        "confidence": 0.93077886
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "My name is Marco and I'll be happy to assist you.",
+        "start": 10840,
+        "end": 12960,
+        "confidence": 0.89492804
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Hi, Marco, my name is Anna.",
+        "start": 14560,
+        "end": 16279,
+        "confidence": 0.80014974
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "I'm calling because I just booked a stay for my husband and me and we're absolutely thrilled.",
+        "start": 16279,
+        "end": 21080,
+        "confidence": 0.98652005
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Like your resort looks so good in the pictures.",
+        "start": 21080,
+        "end": 23600,
+        "confidence": 0.97384757
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "That's wonderful, Anna.",
+        "start": 23920,
+        "end": 25000,
+        "confidence": 0.97819144
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "We can't wait to welcome you.",
+        "start": 25000,
+        "end": 26240,
+        "confidence": 0.98844784
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I'll be happy to pull up your reservation.",
+        "start": 26400,
+        "end": 28280,
+        "confidence": 0.82276183
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Can I please have your last name and confirmation number?",
+        "start": 28280,
+        "end": 30800,
+        "confidence": 0.90680146
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Certainly.",
+        "start": 32000,
+        "end": 32560,
+        "confidence": 0.5264285
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "The.",
+        "start": 32640,
+        "end": 33040,
+        "confidence": 0.5665539
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "The last name is Davis and the confirmation number is SB773902.",
+        "start": 33200,
+        "end": 41474,
+        "confidence": 0.90451103
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "SB77973902, right?",
+        "start": 42566,
+        "end": 47840,
+        "confidence": 0.84463763
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yes, that's the one.",
+        "start": 48720,
+        "end": 49840,
+        "confidence": 0.75955755
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "It's our 10th wedding anniversary trip and we've been saving up for this.",
+        "start": 49920,
+        "end": 54640,
+        "confidence": 0.7025499
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I just wanted to confirm that.",
+        "start": 54640,
+        "end": 56770,
+        "confidence": 0.8164985
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "That the all inclusive meal plan is definitely included as I selected that.",
+        "start": 56840,
+        "end": 60800,
+        "confidence": 0.80028474
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "All right.",
+        "start": 60800,
+        "end": 61240,
+        "confidence": 0.4896698
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "One second, Ms. Davis.",
+        "start": 61720,
+        "end": 63000,
+        "confidence": 0.84586304
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Let me just search it up.",
+        "start": 63560,
+        "end": 64840,
+        "confidence": 0.7558305
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "All right, thank you.",
+        "start": 68280,
+        "end": 68960,
+        "confidence": 0.80924296
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "Ms. Davis, sorry for interrupting you.",
+        "start": 68960,
+        "end": 70240,
+        "confidence": 0.48538628
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I see it right here.",
+        "start": 70240,
+        "end": 71080,
+        "confidence": 0.648497
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "You have a reservation for the Sunset Ocean view suite for five nights, checking in on June 15th, is that correct?",
+        "start": 71080,
+        "end": 77640,
+        "confidence": 0.9279651
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Oh, thank goodness.",
+        "start": 78360,
+        "end": 79480,
+        "confidence": 0.83517385
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yeah, that's perfect.",
+        "start": 79480,
+        "end": 80680,
+        "confidence": 0.90692985
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "We can't wait to try the seafood grill.",
+        "start": 80920,
+        "end": 82840,
+        "confidence": 0.9733791
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Now, I have one little favor to ask.",
+        "start": 83500,
+        "end": 85580,
+        "confidence": 0.7946645
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "If possible, since it's our anniversary, is there any chance we could request a room on a higher floor?",
+        "start": 85980,
+        "end": 92140,
+        "confidence": 0.761738
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "We'd love the best possible view.",
+        "start": 92380,
+        "end": 94060,
+        "confidence": 0.93024707
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "That's a beautiful request for a special occasion.",
+        "start": 94460,
+        "end": 96500,
+        "confidence": 0.97674054
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Wait, let me check if there's availability for the rio request for June 15th.",
+        "start": 96500,
+        "end": 101580,
+        "confidence": 0.9083993
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "One second.",
+        "start": 101580,
+        "end": 102140,
+        "confidence": 0.64591235
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Alright.",
+        "start": 107260,
+        "end": 107780,
+        "confidence": 0.5707479
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Good news, Ms. Davis.",
+        "start": 107780,
+        "end": 108700,
+        "confidence": 0.9586465
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I see we have a gorgeous suite available on the 12th floor, which is one of our highest.",
+        "start": 108700,
+        "end": 113550,
+        "confidence": 0.98110616
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I've gone ahead and placed a firm request for that specific room for you.",
+        "start": 113550,
+        "end": 116910,
+        "confidence": 0.9006499
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Marco, that is absolutely wonderful.",
+        "start": 118270,
+        "end": 120830,
+        "confidence": 0.9822352
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Thank you so much for doing that.",
+        "start": 121070,
+        "end": 122510,
+        "confidence": 0.98696226
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "That is going to make the trip so special.",
+        "start": 122830,
+        "end": 124750,
+        "confidence": 0.97683376
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "My pleasure, Ms. Davis.",
+        "start": 125550,
+        "end": 126790,
+        "confidence": 0.9221125
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "We want your anniversary to be perfect as a little extra.",
+        "start": 126790,
+        "end": 129670,
+        "confidence": 0.9516956
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Thank you.",
+        "start": 129670,
+        "end": 130070,
+        "confidence": 0.85296494
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I've also added a note for a complimentary bottle of sparkling wine and a small dessert plate to be waiting in your room upon arrival.",
+        "start": 130070,
+        "end": 136670,
+        "confidence": 0.52054614
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "You're just making my day.",
+        "start": 137880,
+        "end": 139240,
+        "confidence": 0.9745286
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "That is so thoughtful.",
+        "start": 139640,
+        "end": 141120,
+        "confidence": 0.94315296
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Thank you again.",
+        "start": 141120,
+        "end": 141720,
+        "confidence": 0.938454
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "You've been so helpful.",
+        "start": 141720,
+        "end": 142760,
+        "confidence": 0.9456936
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "It's truly my job and my pleasure.",
+        "start": 142840,
+        "end": 144320,
+        "confidence": 0.9218984
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "We look forward to celebrating our anniversary with you and your husband.",
+        "start": 144320,
+        "end": 148120,
+        "confidence": 0.9888967
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So, just to recap.",
+        "start": 148440,
+        "end": 149520,
+        "confidence": 0.8213949
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Reservation is confirmed, the all inclusive plan is active and you have the 12th floor view.",
+        "start": 149520,
+        "end": 154560,
+        "confidence": 0.6560844
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Request confirmed.",
+        "start": 154560,
+        "end": 155560,
+        "confidence": 0.7524936
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Plus an anniversary treat.",
+        "start": 155800,
+        "end": 157080,
+        "confidence": 0.73759586
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Is there anything else I can assist you with regarding your upcoming stay?",
+        "start": 157240,
+        "end": 160920,
+        "confidence": 0.93849224
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "No, no, that's everything.",
+        "start": 161800,
+        "end": 162840,
+        "confidence": 0.55848444
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "You've been great, Marco.",
+        "start": 163290,
+        "end": 164250,
+        "confidence": 0.9563255
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "See you on the 15th.",
+        "start": 164650,
+        "end": 165770,
+        "confidence": 0.7414901
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "We'll be waiting.",
+        "start": 165850,
+        "end": 166650,
+        "confidence": 0.48795533
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Have a wonderful day, Anna.",
+        "start": 166650,
+        "end": 168010,
+        "confidence": 0.9861677
+      }
+    ]
+  },
+  {
+    "filename": "Normal_Call.mp3",
+    "scenario": "normal",
+    "duration_seconds": 567,
+    "emotional_ranking": 6,
+    "agent_score": 7,
+    "customer_satisfaction": "High",
+    "transcript": [
+      {
+        "speaker": "A",
+        "text": "You have reached the Essence of Argon. This is Donna. I'll be assisting you with your inquiries today. Please be informed that this call is being recorded and monitored for quality assurance purposes. How may I help you?",
+        "timestamp": {
+          "start": 960,
+          "end": 12000
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Well, I bought or I got this Essence of Argon oil for shipping, handling and handling. Cost of 599 sample of it. And if I want to cancel the order, I had to do it within 15 days. And so that is what I want wanted to do. I didn't want to. I didn't want to get, you know, like a monthly for what is it, $83 a month. I can't afford that. Okay.",
+        "timestamp": {
+          "start": 14640,
+          "end": 52290
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "I'm more than happy. I mean, I'm happy to assist you. For me to be able to pull up your subscription here, could you kind of provide me your first and your last name?",
+        "timestamp": {
+          "start": 52290,
+          "end": 61890
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Carolyn. C A R, O, L, Y, N. Lake. L A K E O L, Y, N.",
+        "timestamp": {
+          "start": 63730,
+          "end": 69730
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "And then.",
+        "timestamp": {
+          "start": 71570,
+          "end": 72130
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, L A K E. Yes.",
+        "timestamp": {
+          "start": 72210,
+          "end": 76530
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, Just go ahead to pull up your subscription here or your account. Okay. And could you kind of verify your email address, please?",
+        "timestamp": {
+          "start": 76610,
+          "end": 95250
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "It's lake3921hotmail.com.",
+        "timestamp": {
+          "start": 97010,
+          "end": 101170
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "How about your shipping address?",
+        "timestamp": {
+          "start": 101330,
+          "end": 102770
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "310 Warren Ave, Number 2, Gillette, WY 82716.",
+        "timestamp": {
+          "start": 105340,
+          "end": 110460
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "And is your shipping address same as your billing address Correct? How about Your phone number? 307-680-2068. Okay, thank you very much for that information. Ms. Lake, if you don't want me asking me another reason why you want to cancel the subscription.",
+        "timestamp": {
+          "start": 110940,
+          "end": 129900
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Well, I just. I thought I was just getting a sample order of it. You know, I was curious. Have you how it worked and everything?",
+        "timestamp": {
+          "start": 131720,
+          "end": 142520
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yes. I mean, have you already used.",
+        "timestamp": {
+          "start": 142760,
+          "end": 145240
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Not all of it, but. Not all of it, but I have.",
+        "timestamp": {
+          "start": 145240,
+          "end": 149240
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay.",
+        "timestamp": {
+          "start": 150120,
+          "end": 150680
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I have been using it. Yes.",
+        "timestamp": {
+          "start": 150760,
+          "end": 152440
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. I do understand that, Ms. Blake. This is what I can do for you, for you to be able, you know, to. To maximize or enjoy the benefits of the Argon are going to extend your pre trial for another 15 days with no charge. So at least you do have 15 days to enjoy, you know, the amazing product and then give us a call back before the end of that 15 day additional or extension period to give us the feedback. Because what I heard from you is that you haven't used the product that much. So you're not, you know, here did not yet get what the benefits of it. So that's the reason why I'm extending your period or your pre trial for you to be able to enjoy and discover the benefits of Essence of Argon. Okay. Okay.",
+        "timestamp": {
+          "start": 152600,
+          "end": 209980
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "What date would that be okay?",
+        "timestamp": {
+          "start": 210940,
+          "end": 213350
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Let me check here. So you're already extended your pre trial. It will end on August 24th. So you need to give us a call back before August 24th to give us a feedback if you. I mean, what happened to the product if it didn't something. You know, it gives you the benefits that you need. But let's say you love the product, you like the product, you don't need to give us a call back then. Okay. It will be automatically you will be receiving another bottle for your monthly subscription. And in on setup I call. I heard that you're not, you know your dealing about the price, which is $83.80. Okay, so what I can do for you is aside from extending your pre trial for another 15 days, I'm also giving you my employee discount, which is 20% discount. So instead of paying $83.80, you're going to pay only $67.04. How about that?",
+        "timestamp": {
+          "start": 213350,
+          "end": 295260
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "I can't. I can't afford that.",
+        "timestamp": {
+          "start": 296620,
+          "end": 299180
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. This is my. This is my maximum employee discount, a 40% employee discount. I'll give it to you. It's actually a lifetime employee discount. So instead of paying $83.80 or just be paying $50.28.",
+        "timestamp": {
+          "start": 299820,
+          "end": 316840
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "No, I can't. I can't. I cannot do that. I'd like to. And I wanted to ask you too.",
+        "timestamp": {
+          "start": 319710,
+          "end": 327550
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Go ahead.",
+        "timestamp": {
+          "start": 328910,
+          "end": 329390
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "How often am I supposed to use that? Like at night or.",
+        "timestamp": {
+          "start": 330590,
+          "end": 333870
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, as long as you want.",
+        "timestamp": {
+          "start": 334110,
+          "end": 335790
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Just use it at night?",
+        "timestamp": {
+          "start": 336110,
+          "end": 337870
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Yes, as long as you want, as long as you need it.",
+        "timestamp": {
+          "start": 338270,
+          "end": 340750
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Oh, okay.",
+        "timestamp": {
+          "start": 342760,
+          "end": 344280
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay. Can I just put you.",
+        "timestamp": {
+          "start": 344360,
+          "end": 346360
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I can't afford.",
+        "timestamp": {
+          "start": 346440,
+          "end": 347560
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Can I just put you for a minute?",
+        "timestamp": {
+          "start": 348120,
+          "end": 349640
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Sure.",
+        "timestamp": {
+          "start": 351640,
+          "end": 352040
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you.",
+        "timestamp": {
+          "start": 352200,
+          "end": 352840
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "It.",
+        "timestamp": {
+          "start": 368050,
+          "end": 368290
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Thank you very much for your patience waiting, Ms. Lake. Okay. I already talked to my supervisor and she asked me what amount would you feel the product will be more affordable for you and make you continue your subscription with us? Oh, if we will ask you, do.",
+        "timestamp": {
+          "start": 397900,
+          "end": 423660
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "You think I could, you know like $15? I know that's, you know. But that.",
+        "timestamp": {
+          "start": 423660,
+          "end": 430740
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, ma', am, don't worry. That's great because I already giving you my employee discount of 40%. Right. So my supervisor can give you another 40%. So that's an equivalent of 80%. So instead of paying $83.80, what you'll be paying is only $16.76 every month for everybody. How about that?",
+        "timestamp": {
+          "start": 431380,
+          "end": 454950
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "That sounds great.",
+        "timestamp": {
+          "start": 456470,
+          "end": 457510
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, that's great. So I'm extending your Pre trial until August 24th. So after August 24th, you will be charged only $16.76. Okay. So every month you will be paying. I mean, you will be receiving a bottle of Essence of Argon, and you will be enjoying the benefits of the product, but you will be only paying $16.76. Okay.",
+        "timestamp": {
+          "start": 457910,
+          "end": 489460
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "Okay.",
+        "timestamp": {
+          "start": 490980,
+          "end": 491620
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, then. So that's great. So just For a recap, Ms. Lake, I extended your pre trial for another 15 days and it's going to be end on August20. So you can give us a call back within that period of time to give us a feedback. But like what I've said, if you enjoy the product, it gives you the benefits, the amazing benefits of the product. You don't need to give us a callback. It will be automatically. You will be receiving a subscription every month, but you will be only paying $16.76 because we already give you our employee discount of 80% for Lifetime. Okay. Okay.",
+        "timestamp": {
+          "start": 492180,
+          "end": 535430
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "All right.",
+        "timestamp": {
+          "start": 535430,
+          "end": 535990
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, then. So is there anything else I can help you with?",
+        "timestamp": {
+          "start": 536150,
+          "end": 539670
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "No, that would be it.",
+        "timestamp": {
+          "start": 541750,
+          "end": 543190
+        }
+      },
+      {
+        "speaker": "A",
+        "text": "Okay, then. So we value your business. Thank you for calling Essence of Oregon. Have a great day.",
+        "timestamp": {
+          "start": 543670,
+          "end": 548550
+        }
+      },
+      {
+        "speaker": "B",
+        "text": "You, too. Bye. Bye.",
+        "timestamp": {
+          "start": 549910,
+          "end": 551510
+        }
+      }
+    ],
+    "analysis": {
+      "customer_emotional_state": "The customer begins the call expressing frustration and a clear inability to afford the subscription. Initially, she appears hesitant and skeptical of the agent’s attempts to offer solutions. As the agent persists, offering increasingly generous discounts, the customer's frustration begins to subside, replaced by a cautious optimism and, finally, a sense of relief and agreement. There's an underlying tone of anxiety throughout, particularly concerning the pricing and the duration of the trial. The customer shows increasing engagement as the agent presents solutions, demonstrating a shift from resistance to willingness to compromise.",
+      "agent_performance": "The agent’s performance is mixed. Initially, they demonstrate a professional demeanor and attempt to gather necessary information. However, the agent leans heavily on scripting and offers feel somewhat robotic and detached. The agent's attempts to empathize are weak and lack genuine warmth. While the agent successfully navigated the problem-solving aspect, the lack of personalized engagement and the excessive reliance on pre-determined solutions significantly detract from the overall customer experience. The agent repeatedly states facts without attempting to connect with the customer's specific concerns. The final solution feels driven more by the agent's desire to close the sale than by a deep understanding of the customer's financial situation. The frequent repetition of key information also felt inefficient.",
+      "key_moments": [
+        "Minute 3:30 - Customer expresses initial frustration and inability to afford the subscription. This sets the tone for the call.",
+        "Minute 6:00 - Agent offers the employee discount, leading to a significant shift in the customer’s willingness to engage. This demonstrates the potential for positive intervention.",
+        "Minute 7:15 – The agent’s final offer of 80% discount coupled with the supervisor’s intervention highlights a critical turning point. It’s the moment the customer shows the strongest sign of agreement.",
+        "Minute 8:45 – The agent’s repetition of the extended trial terms is redundant and detracts from the customer’s understanding."
+      ],
+      "overall_verdict": "The call achieved a satisfactory resolution, but the customer experience could have been significantly improved through greater empathy and personalization. The call’s success is primarily due to the agent's persistence in offering discounts, rather than genuine problem-solving and customer connection.",
+      "handled_well": false,
+      "recommendations": [
+        "Train agents to actively listen and demonstrate genuine empathy. Encourage them to ask open-ended questions to understand the customer’s specific financial constraints.",
+        "Reduce reliance on scripted responses. Empower agents to deviate from the script and offer more personalized solutions based on the customer's individual needs.",
+        "Prioritize building rapport and establishing a connection with the customer. A simple acknowledgement of the customer's frustration can go a long way.",
+        "Before offering discounts, explore alternative solutions that might better align with the customer’s budget. Consider offering a lower subscription tier or a temporary pause on the subscription.",
+        "Avoid excessive repetition of information. Focus on clarity and conciseness to avoid overwhelming the customer."
+      ]
+    },
+    "raw_sentiment": [
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "You have reached the Essence of Argon.",
+        "start": 960,
+        "end": 2800,
+        "confidence": 0.758619
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "This is Donna.",
+        "start": 2800,
+        "end": 3560,
+        "confidence": 0.6295101
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I'll be assisting you with your inquiries today.",
+        "start": 3560,
+        "end": 5680,
+        "confidence": 0.7065894
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Please be informed that this call is being recorded and monitored for quality assurance purposes.",
+        "start": 6080,
+        "end": 10960,
+        "confidence": 0.8700579
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How may I help you?",
+        "start": 10960,
+        "end": 12000,
+        "confidence": 0.856449
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Well, I bought or I got this Essence of Argon oil for shipping, handling and handling.",
+        "start": 14640,
+        "end": 23840,
+        "confidence": 0.8979041
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Cost of 599 sample of it.",
+        "start": 23840,
+        "end": 26970,
+        "confidence": 0.7474412
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And if I want to cancel the order, I had to do it within 15 days.",
+        "start": 27770,
+        "end": 34810,
+        "confidence": 0.5461596
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "And so that is what I want wanted to do.",
+        "start": 35690,
+        "end": 40090,
+        "confidence": 0.71925944
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I didn't want to.",
+        "start": 40090,
+        "end": 40970,
+        "confidence": 0.6631138
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I didn't want to get, you know, like a monthly for what is it, $83 a month.",
+        "start": 41290,
+        "end": 48330,
+        "confidence": 0.6903284
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I can't afford that.",
+        "start": 50250,
+        "end": 51370,
+        "confidence": 0.86114603
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Okay.",
+        "start": 52050,
+        "end": 52290,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I'm more than happy.",
+        "start": 52290,
+        "end": 53130,
+        "confidence": 0.9836828
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I mean, I'm happy to assist you.",
+        "start": 53130,
+        "end": 55410,
+        "confidence": 0.8501155
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "For me to be able to pull up your subscription here, could you kind of provide me your first and your last name?",
+        "start": 56210,
+        "end": 61890,
+        "confidence": 0.9197314
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Carolyn.",
+        "start": 63730,
+        "end": 64450,
+        "confidence": 0.81282
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "C A R, O, L, Y, N. Lake.",
+        "start": 64450,
+        "end": 66970,
+        "confidence": 0.7978661
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "L A K E O L, Y, N. And then.",
+        "start": 66970,
+        "end": 72130,
+        "confidence": 0.64499146
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yes, L A K E. Yes.",
+        "start": 72210,
+        "end": 76530,
+        "confidence": 0.8235211
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, Just go ahead to pull up your subscription here or your account.",
+        "start": 76610,
+        "end": 81650,
+        "confidence": 0.82689464
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 83490,
+        "end": 84130,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "And could you kind of verify your email address, please?",
+        "start": 92690,
+        "end": 95250,
+        "confidence": 0.88129544
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "It's lake3921hotmail.com.",
+        "start": 97010,
+        "end": 101170,
+        "confidence": 0.8381363
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How about your shipping address?",
+        "start": 101330,
+        "end": 102770,
+        "confidence": 0.8586514
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "310 Warren Ave, Number 2, Gillette, WY 82716.",
+        "start": 105340,
+        "end": 110460,
+        "confidence": 0.90521234
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "And is your shipping address same as your billing address Correct?",
+        "start": 110940,
+        "end": 116620,
+        "confidence": 0.8110116
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How about Your phone number?",
+        "start": 116780,
+        "end": 118060,
+        "confidence": 0.8653636
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "307-680-2068.",
+        "start": 120460,
+        "end": 123180,
+        "confidence": 0.670925
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Okay, thank you very much for that information.",
+        "start": 123340,
+        "end": 125180,
+        "confidence": 0.96261764
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "A",
+        "text": "Ms. Lake, if you don't want me asking me another reason why you want to cancel the subscription.",
+        "start": 125340,
+        "end": 129900,
+        "confidence": 0.6594901
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Well, I just.",
+        "start": 131720,
+        "end": 132440,
+        "confidence": 0.5337948
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I thought I was just getting a sample order of it.",
+        "start": 132680,
+        "end": 136440,
+        "confidence": 0.73251426
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "You know, I was curious.",
+        "start": 136920,
+        "end": 138040,
+        "confidence": 0.7609403
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Have you how it worked and everything?",
+        "start": 140680,
+        "end": 142520,
+        "confidence": 0.83310926
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Yes.",
+        "start": 142760,
+        "end": 143120,
+        "confidence": 0.46103904
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I mean, have you already used.",
+        "start": 143120,
+        "end": 145240,
+        "confidence": 0.7391949
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Not all of it, but.",
+        "start": 145240,
+        "end": 146359,
+        "confidence": 0.7703761
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Not all of it, but I have.",
+        "start": 147560,
+        "end": 149240,
+        "confidence": 0.7727455
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 150120,
+        "end": 150680,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I have been using it.",
+        "start": 150760,
+        "end": 152040,
+        "confidence": 0.7879665
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "Yes.",
+        "start": 152040,
+        "end": 152440,
+        "confidence": 0.46103904
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 152600,
+        "end": 153040,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I do understand that, Ms. Blake.",
+        "start": 153040,
+        "end": 155240,
+        "confidence": 0.64466095
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "This is what I can do for you, for you to be able, you know, to.",
+        "start": 155640,
+        "end": 158890,
+        "confidence": 0.6122035
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "To maximize or enjoy the benefits of the Argon are going to extend your pre trial for another 15 days with no charge.",
+        "start": 159040,
+        "end": 168640,
+        "confidence": 0.7381511
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "So at least you do have 15 days to enjoy, you know, the amazing product and then give us a call back before the end of that 15 day additional or extension period to give us the feedback.",
+        "start": 168720,
+        "end": 183280,
+        "confidence": 0.86264753
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Because what I heard from you is that you haven't used the product that much.",
+        "start": 183280,
+        "end": 188380,
+        "confidence": 0.49281093
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So you're not, you know, here did not yet get what the benefits of it.",
+        "start": 188620,
+        "end": 193260,
+        "confidence": 0.6519807
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "So that's the reason why I'm extending your period or your pre trial for you to be able to enjoy and discover the benefits of Essence of Argon.",
+        "start": 193340,
+        "end": 206700,
+        "confidence": 0.61706924
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 206940,
+        "end": 207580,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 209340,
+        "end": 209980,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "What date would that be okay?",
+        "start": 210940,
+        "end": 213350,
+        "confidence": 0.8756678
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Let me check here.",
+        "start": 213350,
+        "end": 214390,
+        "confidence": 0.7471338
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So you're already extended your pre trial.",
+        "start": 224790,
+        "end": 228630,
+        "confidence": 0.7823641
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "It will end on August 24th.",
+        "start": 228709,
+        "end": 231590,
+        "confidence": 0.9126815
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So you need to give us a call back before August 24th to give us a feedback if you.",
+        "start": 231990,
+        "end": 237750,
+        "confidence": 0.9224974
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I mean, what happened to the product if it didn't something.",
+        "start": 238540,
+        "end": 241420,
+        "confidence": 0.5628301
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "You know, it gives you the benefits that you need.",
+        "start": 241500,
+        "end": 244580,
+        "confidence": 0.86021364
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "But let's say you love the product, you like the product, you don't need to give us a call back then.",
+        "start": 244580,
+        "end": 250660,
+        "confidence": 0.48255742
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 250660,
+        "end": 251060,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "It will be automatically you will be receiving another bottle for your monthly subscription.",
+        "start": 251060,
+        "end": 258460,
+        "confidence": 0.8526041
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "And in on setup I call.",
+        "start": 258940,
+        "end": 260900,
+        "confidence": 0.8463305
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I heard that you're not, you know your dealing about the price, which is $83.80.",
+        "start": 260900,
+        "end": 270790,
+        "confidence": 0.72692364
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Okay, so what I can do for you is aside from extending your pre trial for another 15 days, I'm also giving you my employee discount, which is 20% discount.",
+        "start": 271190,
+        "end": 286310,
+        "confidence": 0.66048586
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So instead of paying $83.80, you're going to pay only $67.04.",
+        "start": 286950,
+        "end": 294580,
+        "confidence": 0.6822759
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How about that?",
+        "start": 294580,
+        "end": 295260,
+        "confidence": 0.7850325
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I can't.",
+        "start": 296620,
+        "end": 297740,
+        "confidence": 0.77191037
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I can't afford that.",
+        "start": 297900,
+        "end": 299180,
+        "confidence": 0.86114603
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 299820,
+        "end": 300380,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "This is my.",
+        "start": 300940,
+        "end": 301980,
+        "confidence": 0.6575026
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "This is my maximum employee discount, a 40% employee discount.",
+        "start": 302700,
+        "end": 306740,
+        "confidence": 0.79089403
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I'll give it to you.",
+        "start": 306740,
+        "end": 307660,
+        "confidence": 0.6128514
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "It's actually a lifetime employee discount.",
+        "start": 307660,
+        "end": 310700,
+        "confidence": 0.49575624
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So instead of paying $83.80 or just be paying $50.28.",
+        "start": 310700,
+        "end": 316840,
+        "confidence": 0.6459341
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "No, I can't.",
+        "start": 319710,
+        "end": 320350,
+        "confidence": 0.7150895
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I can't.",
+        "start": 320350,
+        "end": 320910,
+        "confidence": 0.77191037
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "I cannot do that.",
+        "start": 320910,
+        "end": 322030,
+        "confidence": 0.9115364
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "I'd like to.",
+        "start": 323310,
+        "end": 324110,
+        "confidence": 0.5835852
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "And I wanted to ask you too.",
+        "start": 324350,
+        "end": 327550,
+        "confidence": 0.83783394
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Go ahead.",
+        "start": 328910,
+        "end": 329390,
+        "confidence": 0.6500545
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "How often am I supposed to use that?",
+        "start": 330590,
+        "end": 332510,
+        "confidence": 0.73409665
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Like at night or.",
+        "start": 332510,
+        "end": 333870,
+        "confidence": 0.723464
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Yes, as long as you want.",
+        "start": 334110,
+        "end": 335790,
+        "confidence": 0.54769456
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Just use it at night?",
+        "start": 336110,
+        "end": 337870,
+        "confidence": 0.8717935
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Yes, as long as you want, as long as you need it.",
+        "start": 338270,
+        "end": 340750,
+        "confidence": 0.52073205
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Oh, okay.",
+        "start": 342760,
+        "end": 344280,
+        "confidence": 0.5817293
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 344360,
+        "end": 344920,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Can I just put you.",
+        "start": 345560,
+        "end": 346360,
+        "confidence": 0.7829407
+      },
+      {
+        "sentiment": "NEGATIVE",
+        "speaker": "B",
+        "text": "Yeah, I can't afford.",
+        "start": 346440,
+        "end": 347560,
+        "confidence": 0.7716389
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Can I just put you for a minute?",
+        "start": 348120,
+        "end": 349640,
+        "confidence": 0.8610054
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Sure.",
+        "start": 351640,
+        "end": 352040,
+        "confidence": 0.47534677
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Thank you.",
+        "start": 352200,
+        "end": 352840,
+        "confidence": 0.852965
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "It.",
+        "start": 368050,
+        "end": 368290,
+        "confidence": 0.5428686
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Thank you very much for your patience waiting, Ms. Lake.",
+        "start": 397900,
+        "end": 400060,
+        "confidence": 0.97313166
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 402140,
+        "end": 402780,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "I already talked to my supervisor and she asked me what amount would you feel the product will be more affordable for you and make you continue your subscription with us?",
+        "start": 403020,
+        "end": 414300,
+        "confidence": 0.8821784
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Oh, if we will ask you, do you think I could, you know like $15?",
+        "start": 418460,
+        "end": 428260,
+        "confidence": 0.8523265
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "I know that's, you know.",
+        "start": 429060,
+        "end": 430220,
+        "confidence": 0.6850835
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "But that.",
+        "start": 430220,
+        "end": 430740,
+        "confidence": 0.6162746
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, ma', am, don't worry.",
+        "start": 431380,
+        "end": 432700,
+        "confidence": 0.55151105
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "That's great because I already giving you my employee discount of 40%.",
+        "start": 432700,
+        "end": 437220,
+        "confidence": 0.96478766
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Right.",
+        "start": 437300,
+        "end": 437700,
+        "confidence": 0.56647503
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So my supervisor can give you another 40%.",
+        "start": 438100,
+        "end": 441380,
+        "confidence": 0.71009
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So that's an equivalent of 80%.",
+        "start": 441460,
+        "end": 443460,
+        "confidence": 0.83626735
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So instead of paying $83.80, what you'll be paying is only $16.76 every month for everybody.",
+        "start": 444100,
+        "end": 454110,
+        "confidence": 0.6568384
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "How about that?",
+        "start": 454110,
+        "end": 454950,
+        "confidence": 0.7850325
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "B",
+        "text": "That sounds great.",
+        "start": 456470,
+        "end": 457510,
+        "confidence": 0.97922254
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Okay, that's great.",
+        "start": 457910,
+        "end": 459110,
+        "confidence": 0.9855356
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So I'm extending your Pre trial until August 24th.",
+        "start": 459510,
+        "end": 465030,
+        "confidence": 0.8849657
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So after August 24th, you will be charged only $16.76.",
+        "start": 465030,
+        "end": 472230,
+        "confidence": 0.8728225
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 472580,
+        "end": 473060,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So every month you will be paying.",
+        "start": 473140,
+        "end": 475620,
+        "confidence": 0.6677511
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "I mean, you will be receiving a bottle of Essence of Argon, and you will be enjoying the benefits of the product, but you will be only paying $16.76.",
+        "start": 475940,
+        "end": 488659,
+        "confidence": 0.6947825
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 488900,
+        "end": 489460,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Okay.",
+        "start": 490980,
+        "end": 491620,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, then.",
+        "start": 492180,
+        "end": 493020,
+        "confidence": 0.6433058
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "So that's great.",
+        "start": 493020,
+        "end": 493860,
+        "confidence": 0.98304635
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So just For a recap, Ms. Lake, I extended your pre trial for another 15 days and it's going to be end on August20.",
+        "start": 493860,
+        "end": 503620,
+        "confidence": 0.8592503
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So you can give us a call back within that period of time to give us a feedback.",
+        "start": 504320,
+        "end": 510000,
+        "confidence": 0.85279816
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "But like what I've said, if you enjoy the product, it gives you the benefits, the amazing benefits of the product.",
+        "start": 510240,
+        "end": 517120,
+        "confidence": 0.93769264
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "You don't need to give us a callback.",
+        "start": 517120,
+        "end": 518600,
+        "confidence": 0.5748144
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "It will be automatically.",
+        "start": 518600,
+        "end": 519920,
+        "confidence": 0.71649945
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "You will be receiving a subscription every month, but you will be only paying $16.76 because we already give you our employee discount of 80% for Lifetime.",
+        "start": 520000,
+        "end": 532710,
+        "confidence": 0.69099677
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 532710,
+        "end": 533350,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay.",
+        "start": 534710,
+        "end": 535430,
+        "confidence": 0.5843516
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "All right.",
+        "start": 535430,
+        "end": 535990,
+        "confidence": 0.48966998
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, then.",
+        "start": 536150,
+        "end": 536950,
+        "confidence": 0.6433058
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "So is there anything else I can help you with?",
+        "start": 536950,
+        "end": 539670,
+        "confidence": 0.8974634
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "No, that would be it.",
+        "start": 541750,
+        "end": 543190,
+        "confidence": 0.5913788
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "A",
+        "text": "Okay, then.",
+        "start": 543670,
+        "end": 544430,
+        "confidence": 0.6433058
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "So we value your business.",
+        "start": 544430,
+        "end": 545830,
+        "confidence": 0.7851149
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Thank you for calling Essence of Oregon.",
+        "start": 545830,
+        "end": 547829,
+        "confidence": 0.9347515
+      },
+      {
+        "sentiment": "POSITIVE",
+        "speaker": "A",
+        "text": "Have a great day.",
+        "start": 547829,
+        "end": 548550,
+        "confidence": 0.9839135
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "You, too.",
+        "start": 549910,
+        "end": 550550,
+        "confidence": 0.7462463
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Bye.",
+        "start": 550790,
+        "end": 551150,
+        "confidence": 0.5137449
+      },
+      {
+        "sentiment": "NEUTRAL",
+        "speaker": "B",
+        "text": "Bye.",
+        "start": 551150,
+        "end": 551510,
+        "confidence": 0.5137449
+      }
+    ]
+  }
+]

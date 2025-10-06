@@ -1,0 +1,637 @@
+{
+  "filename": "Happy_Call.mp3",
+  "scenario": "happy",
+  "duration_seconds": 171,
+  "emotional_ranking": 9,
+  "agent_score": 9,
+  "customer_satisfaction": "Very High",
+  "transcript": [
+    {
+      "speaker": "A",
+      "text": "Good afternoon. Thank you for calling the Sandstone Beach Resort. My name is Marco and I'll be happy to assist you.",
+      "timestamp": {
+        "start": 8320,
+        "end": 12960
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Hi, Marco, my name is Anna. I'm calling because I just booked a stay for my husband and me and we're absolutely thrilled. Like your resort looks so good in the pictures.",
+      "timestamp": {
+        "start": 14560,
+        "end": 23600
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "That's wonderful, Anna. We can't wait to welcome you. I'll be happy to pull up your reservation. Can I please have your last name and confirmation number?",
+      "timestamp": {
+        "start": 23920,
+        "end": 30800
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Certainly. The. The last name is Davis and the confirmation number is SB773902.",
+      "timestamp": {
+        "start": 32000,
+        "end": 41474
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "SB77973902, right?",
+      "timestamp": {
+        "start": 42566,
+        "end": 47840
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Yes, that's the one. It's our 10th wedding anniversary trip and we've been saving up for this. I just wanted to confirm that. That the all inclusive meal plan is definitely included as I selected that.",
+      "timestamp": {
+        "start": 48720,
+        "end": 60800
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "All right. One second, Ms. Davis. Let me just search it up. All right, thank you. Ms. Davis, sorry for interrupting you. I see it right here. You have a reservation for the Sunset Ocean view suite for five nights, checking in on June 15th, is that correct?",
+      "timestamp": {
+        "start": 60800,
+        "end": 77640
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Oh, thank goodness. Yeah, that's perfect. We can't wait to try the seafood grill. Now, I have one little favor to ask. If possible, since it's our anniversary, is there any chance we could request a room on a higher floor? We'd love the best possible view.",
+      "timestamp": {
+        "start": 78360,
+        "end": 94060
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "That's a beautiful request for a special occasion. Wait, let me check if there's availability for the rio request for June 15th. One second. Alright. Good news, Ms. Davis. I see we have a gorgeous suite available on the 12th floor, which is one of our highest. I've gone ahead and placed a firm request for that specific room for you.",
+      "timestamp": {
+        "start": 94460,
+        "end": 116910
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "Marco, that is absolutely wonderful. Thank you so much for doing that. That is going to make the trip so special.",
+      "timestamp": {
+        "start": 118270,
+        "end": 124750
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "My pleasure, Ms. Davis. We want your anniversary to be perfect as a little extra. Thank you. I've also added a note for a complimentary bottle of sparkling wine and a small dessert plate to be waiting in your room upon arrival.",
+      "timestamp": {
+        "start": 125550,
+        "end": 136670
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "You're just making my day. That is so thoughtful. Thank you again. You've been so helpful.",
+      "timestamp": {
+        "start": 137880,
+        "end": 142760
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "It's truly my job and my pleasure. We look forward to celebrating our anniversary with you and your husband. So, just to recap. Reservation is confirmed, the all inclusive plan is active and you have the 12th floor view. Request confirmed. Plus an anniversary treat. Is there anything else I can assist you with regarding your upcoming stay?",
+      "timestamp": {
+        "start": 142840,
+        "end": 160920
+      }
+    },
+    {
+      "speaker": "B",
+      "text": "No, no, that's everything. You've been great, Marco. See you on the 15th.",
+      "timestamp": {
+        "start": 161800,
+        "end": 165770
+      }
+    },
+    {
+      "speaker": "A",
+      "text": "We'll be waiting. Have a wonderful day, Anna.",
+      "timestamp": {
+        "start": 165850,
+        "end": 168010
+      }
+    }
+  ],
+  "analysis": {
+    "customer_emotional_state": "The customer, Anna, begins the call with excitement and anticipation regarding her upcoming anniversary trip. Her emotional state shifts positively throughout the conversation, intensifying with each positive response from Marco. Initially, she expresses gratitude and delight. As Marco proactively offers to fulfill her request for a higher floor room and adds the complimentary anniversary treats, her excitement and gratitude escalate, culminating in a very satisfied and delighted emotional state. The call ended with a feeling of being well taken care of and valued as a guest.",
+    "agent_performance": "Marco demonstrated excellent customer service skills. He was consistently professional, polite, and empathetic. He actively listened to Anna's requests, anticipated her needs, and went above and beyond to personalize her experience. His proactive approach, particularly adding the anniversary treats, significantly enhanced the customer's satisfaction. His tone was friendly and reassuring, contributing to a positive customer experience. He effectively handled the request for a room upgrade and tailored the interaction to the special occasion.",
+    "key_moments": [
+      "0:30 – 0:45: Initial exchange – Anna expresses excitement and confirms reservation details, setting a positive tone.",
+      "1:30 – 1:45: Room upgrade request and confirmation – Marco proactively offers a higher floor suite and confirms the request, immediately addressing a key customer desire.",
+      "2:15 – 2:30: Adding anniversary treats – Marco’s additional gesture elevates the experience, showcasing a commitment to making the trip memorable.",
+      "2:40 – 2:51: Recap and closing – Marco summarizes the confirmed details and expresses anticipation for the event, reinforcing a positive conclusion."
+    ],
+    "overall_verdict": "This call exemplifies excellent customer service. Marco’s proactive and personalized approach resulted in a highly satisfied customer and a successful resolution to her needs.",
+    "handled_well": true,
+    "recommendations": [
+      "Implement a system for proactively identifying and offering upgrades for special occasion bookings.",
+      "Train agents to consistently anticipate additional small gestures to enhance the guest experience (e.g., suggesting local attractions or recommending favorite restaurants).",
+      "Develop a standardized script for handling room upgrade requests, ensuring agents consistently offer the best available options."
+    ]
+  },
+  "raw_sentiment": [
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Good afternoon.",
+      "start": 8320,
+      "end": 8840,
+      "confidence": 0.79168147
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Thank you for calling the Sandstone Beach Resort.",
+      "start": 8840,
+      "end": 10840,
+      "confidence": 0.93077886
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "My name is Marco and I'll be happy to assist you.",
+      "start": 10840,
+      "end": 12960,
+      "confidence": 0.89492804
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Hi, Marco, my name is Anna.",
+      "start": 14560,
+      "end": 16279,
+      "confidence": 0.80014974
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "I'm calling because I just booked a stay for my husband and me and we're absolutely thrilled.",
+      "start": 16279,
+      "end": 21080,
+      "confidence": 0.98652005
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Like your resort looks so good in the pictures.",
+      "start": 21080,
+      "end": 23600,
+      "confidence": 0.97384757
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "That's wonderful, Anna.",
+      "start": 23920,
+      "end": 25000,
+      "confidence": 0.97819144
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "We can't wait to welcome you.",
+      "start": 25000,
+      "end": 26240,
+      "confidence": 0.98844784
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "I'll be happy to pull up your reservation.",
+      "start": 26400,
+      "end": 28280,
+      "confidence": 0.82276183
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Can I please have your last name and confirmation number?",
+      "start": 28280,
+      "end": 30800,
+      "confidence": 0.90680146
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Certainly.",
+      "start": 32000,
+      "end": 32560,
+      "confidence": 0.5264285
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "The.",
+      "start": 32640,
+      "end": 33040,
+      "confidence": 0.5665539
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "The last name is Davis and the confirmation number is SB773902.",
+      "start": 33200,
+      "end": 41474,
+      "confidence": 0.90451103
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "SB77973902, right?",
+      "start": 42566,
+      "end": 47840,
+      "confidence": 0.84463763
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Yes, that's the one.",
+      "start": 48720,
+      "end": 49840,
+      "confidence": 0.75955755
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "It's our 10th wedding anniversary trip and we've been saving up for this.",
+      "start": 49920,
+      "end": 54640,
+      "confidence": 0.7025499
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "I just wanted to confirm that.",
+      "start": 54640,
+      "end": 56770,
+      "confidence": 0.8164985
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "That the all inclusive meal plan is definitely included as I selected that.",
+      "start": 56840,
+      "end": 60800,
+      "confidence": 0.80028474
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "All right.",
+      "start": 60800,
+      "end": 61240,
+      "confidence": 0.4896698
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "One second, Ms. Davis.",
+      "start": 61720,
+      "end": 63000,
+      "confidence": 0.84586304
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Let me just search it up.",
+      "start": 63560,
+      "end": 64840,
+      "confidence": 0.7558305
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "All right, thank you.",
+      "start": 68280,
+      "end": 68960,
+      "confidence": 0.80924296
+    },
+    {
+      "sentiment": "NEGATIVE",
+      "speaker": "A",
+      "text": "Ms. Davis, sorry for interrupting you.",
+      "start": 68960,
+      "end": 70240,
+      "confidence": 0.48538628
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "I see it right here.",
+      "start": 70240,
+      "end": 71080,
+      "confidence": 0.648497
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "You have a reservation for the Sunset Ocean view suite for five nights, checking in on June 15th, is that correct?",
+      "start": 71080,
+      "end": 77640,
+      "confidence": 0.9279651
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Oh, thank goodness.",
+      "start": 78360,
+      "end": 79480,
+      "confidence": 0.83517385
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Yeah, that's perfect.",
+      "start": 79480,
+      "end": 80680,
+      "confidence": 0.90692985
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "We can't wait to try the seafood grill.",
+      "start": 80920,
+      "end": 82840,
+      "confidence": 0.9733791
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "Now, I have one little favor to ask.",
+      "start": 83500,
+      "end": 85580,
+      "confidence": 0.7946645
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "If possible, since it's our anniversary, is there any chance we could request a room on a higher floor?",
+      "start": 85980,
+      "end": 92140,
+      "confidence": 0.761738
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "We'd love the best possible view.",
+      "start": 92380,
+      "end": 94060,
+      "confidence": 0.93024707
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "That's a beautiful request for a special occasion.",
+      "start": 94460,
+      "end": 96500,
+      "confidence": 0.97674054
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Wait, let me check if there's availability for the rio request for June 15th.",
+      "start": 96500,
+      "end": 101580,
+      "confidence": 0.9083993
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "One second.",
+      "start": 101580,
+      "end": 102140,
+      "confidence": 0.64591235
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Alright.",
+      "start": 107260,
+      "end": 107780,
+      "confidence": 0.5707479
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Good news, Ms. Davis.",
+      "start": 107780,
+      "end": 108700,
+      "confidence": 0.9586465
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "I see we have a gorgeous suite available on the 12th floor, which is one of our highest.",
+      "start": 108700,
+      "end": 113550,
+      "confidence": 0.98110616
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "I've gone ahead and placed a firm request for that specific room for you.",
+      "start": 113550,
+      "end": 116910,
+      "confidence": 0.9006499
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Marco, that is absolutely wonderful.",
+      "start": 118270,
+      "end": 120830,
+      "confidence": 0.9822352
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Thank you so much for doing that.",
+      "start": 121070,
+      "end": 122510,
+      "confidence": 0.98696226
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "That is going to make the trip so special.",
+      "start": 122830,
+      "end": 124750,
+      "confidence": 0.97683376
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "My pleasure, Ms. Davis.",
+      "start": 125550,
+      "end": 126790,
+      "confidence": 0.9221125
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "We want your anniversary to be perfect as a little extra.",
+      "start": 126790,
+      "end": 129670,
+      "confidence": 0.9516956
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Thank you.",
+      "start": 129670,
+      "end": 130070,
+      "confidence": 0.85296494
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "I've also added a note for a complimentary bottle of sparkling wine and a small dessert plate to be waiting in your room upon arrival.",
+      "start": 130070,
+      "end": 136670,
+      "confidence": 0.52054614
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "You're just making my day.",
+      "start": 137880,
+      "end": 139240,
+      "confidence": 0.9745286
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "That is so thoughtful.",
+      "start": 139640,
+      "end": 141120,
+      "confidence": 0.94315296
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "Thank you again.",
+      "start": 141120,
+      "end": 141720,
+      "confidence": 0.938454
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "You've been so helpful.",
+      "start": 141720,
+      "end": 142760,
+      "confidence": 0.9456936
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "It's truly my job and my pleasure.",
+      "start": 142840,
+      "end": 144320,
+      "confidence": 0.9218984
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "We look forward to celebrating our anniversary with you and your husband.",
+      "start": 144320,
+      "end": 148120,
+      "confidence": 0.9888967
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "So, just to recap.",
+      "start": 148440,
+      "end": 149520,
+      "confidence": 0.8213949
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Reservation is confirmed, the all inclusive plan is active and you have the 12th floor view.",
+      "start": 149520,
+      "end": 154560,
+      "confidence": 0.6560844
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Request confirmed.",
+      "start": 154560,
+      "end": 155560,
+      "confidence": 0.7524936
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Plus an anniversary treat.",
+      "start": 155800,
+      "end": 157080,
+      "confidence": 0.73759586
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "Is there anything else I can assist you with regarding your upcoming stay?",
+      "start": 157240,
+      "end": 160920,
+      "confidence": 0.93849224
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "No, no, that's everything.",
+      "start": 161800,
+      "end": 162840,
+      "confidence": 0.55848444
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "B",
+      "text": "You've been great, Marco.",
+      "start": 163290,
+      "end": 164250,
+      "confidence": 0.9563255
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "B",
+      "text": "See you on the 15th.",
+      "start": 164650,
+      "end": 165770,
+      "confidence": 0.7414901
+    },
+    {
+      "sentiment": "NEUTRAL",
+      "speaker": "A",
+      "text": "We'll be waiting.",
+      "start": 165850,
+      "end": 166650,
+      "confidence": 0.48795533
+    },
+    {
+      "sentiment": "POSITIVE",
+      "speaker": "A",
+      "text": "Have a wonderful day, Anna.",
+      "start": 166650,
+      "end": 168010,
+      "confidence": 0.9861677
+    }
+  ]
+}
