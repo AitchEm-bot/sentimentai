@@ -298,6 +298,7 @@ export default function DemoShowcase() {
               <p className="font-semibold text-gray-900 mb-3">{currentDemo.title}</p>
               <audio
                 controls
+                controlsList="nodownload"
                 className="w-full mb-2"
                 src={currentDemo.audioFile}
                 preload="metadata"

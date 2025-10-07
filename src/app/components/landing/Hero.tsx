@@ -25,8 +25,6 @@ export default function Hero() {
     voiceState,
     conversation,
     error,
-    currentUserText,
-    currentAiText,
     startListening,
     stopListening,
     clearConversation,
@@ -128,16 +126,10 @@ export default function Hero() {
           </motion.div>
 
           {/* Connection Status */}
-          <div className="flex flex-col items-center gap-2">
+          <div className="relative flex flex-col items-center gap-2">
             {!isConnected && (
               <div className="text-yellow-600 text-sm">
                 Connecting to voice server...
-              </div>
-            )}
-
-            {error && (
-              <div className="px-4 py-2 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm max-w-md">
-                {error}
               </div>
             )}
 
@@ -145,32 +137,22 @@ export default function Hero() {
             <div className="text-lg font-medium text-gray-700">
               {getStatusText()}
             </div>
-          </div>
 
-          {/* Current Interaction */}
-          <AnimatePresence>
-            {(currentUserText || currentAiText) && (
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                className="max-w-2xl w-full"
-              >
-                {currentUserText && (
-                  <div className="mb-2 p-3 bg-blue-50 border border-blue-200 rounded-lg text-left">
-                    <p className="text-sm font-semibold text-blue-600">You:</p>
-                    <p className="text-gray-800">{currentUserText}</p>
-                  </div>
-                )}
-                {currentAiText && (
-                  <div className="p-3 bg-green-50 border border-green-200 rounded-lg text-left">
-                    <p className="text-sm font-semibold text-green-600">AI:</p>
-                    <p className="text-gray-800">{currentAiText}</p>
-                  </div>
-                )}
-              </motion.div>
-            )}
-          </AnimatePresence>
+            {/* Error message - absolutely positioned to not affect layout */}
+            <AnimatePresence>
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full mt-2 px-4 py-2 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm max-w-md shadow-lg z-10"
+                >
+                  {error}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
 
           {/* Conversation History */}
           {conversation.length > 0 && (

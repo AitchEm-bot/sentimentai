@@ -123,11 +123,26 @@ wss.on('connection', async (ws: WebSocket) => {
             console.log(`✓ Audio buffer committed (${sessionId})`);
             break;
 
+          case 'response.content_part.added':
+            // New response is starting (includes audio)
+            console.log(`🎬 New response starting for session ${sessionId}`);
+            ws.send(JSON.stringify({
+              type: 'response_started',
+            }));
+            break;
+
           case 'response.audio.delta':
             // Forward audio chunks to client
             ws.send(JSON.stringify({
               type: 'audio',
               audio: event.delta,
+            }));
+            break;
+
+          case 'response.audio.done':
+            console.log(`🔊 Audio streaming complete for session ${sessionId}`);
+            ws.send(JSON.stringify({
+              type: 'audio_done',
             }));
             break;
 

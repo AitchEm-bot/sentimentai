@@ -27,8 +27,13 @@ export function useVoiceChat() {
   const playbackBufferRef = useRef<Int16Array[]>([]);
   const playbackContextRef = useRef<AudioContext | null>(null);
   const playbackSourceRef = useRef<AudioBufferSourceNode | null>(null);
+  const activeSourcesRef = useRef<AudioBufferSourceNode[]>([]);
   const isPlayingRef = useRef<boolean>(false);
   const playbackAnalyserRef = useRef<AnalyserNode | null>(null);
+  const volumeMonitoringIdRef = useRef<number | null>(null);
+  const schedulingTimeoutIdRef = useRef<NodeJS.Timeout | null>(null);
+  const isMonitoringVolumeRef = useRef<boolean>(false);
+  const isInterruptedRef = useRef<boolean>(false);
   const [aiAudioVolume, setAiAudioVolume] = useState<number>(0);
 
   // Initialize WebSocket client
@@ -39,7 +44,9 @@ export function useVoiceChat() {
     client.onStatusChange = (status) => {
       setConnectionStatus(status);
       if (status === 'error') {
-        setError('Connection error. Please try again.');
+        setError('Unable to connect to voice server');
+      } else if (status === 'connected') {
+        setError(null); // Clear error when connected
       }
     };
 
@@ -48,12 +55,20 @@ export function useVoiceChat() {
     };
 
     client.onAudioChunk = (chunk: ArrayBuffer) => {
+      // CRITICAL: Reject all audio if we're in interrupted state
+      if (isInterruptedRef.current) {
+        console.log(`🚫 Rejecting audio chunk - interrupted state`);
+        return;
+      }
+
       // Convert ArrayBuffer to Int16Array (PCM16)
       const pcm16 = new Int16Array(chunk);
       playbackBufferRef.current.push(pcm16);
+      console.log(`🎵 Buffered audio chunk (${pcm16.length} samples), buffer size: ${playbackBufferRef.current.length}`);
 
       // Start playing immediately when we receive first chunk
-      if (!isPlayingRef.current && voiceState !== 'speaking') {
+      if (!isPlayingRef.current) {
+        console.log('▶️ Starting audio playback');
         setVoiceState('speaking');
         isPlayingRef.current = true;
         playAudioStreamRealtime();
@@ -61,8 +76,9 @@ export function useVoiceChat() {
     };
 
     client.onError = (err) => {
-      setError(err.message);
-      setVoiceState('idle');
+      // Only show connection errors, not errors during active sessions
+      console.log('WebSocket error:', err);
+      // Connection errors are handled by onStatusChange
     };
 
     wsClientRef.current = client;
@@ -70,7 +86,7 @@ export function useVoiceChat() {
     // Connect on mount
     client.connect().catch((err) => {
       console.error('Failed to connect:', err);
-      setError('Failed to connect to voice server');
+      setError('Unable to connect to voice server');
     });
 
     return () => {
@@ -91,12 +107,26 @@ export function useVoiceChat() {
         break;
 
       case 'speech_started':
-        console.log('Speech detected by VAD');
-        // User started speaking - visual feedback could be added here
+        console.log('🎤 Speech detected by VAD, current state:', voiceState, 'isPlaying:', isPlayingRef.current);
+        // User started speaking - set interrupted flag to reject incoming audio
+        console.log('🛑 Setting interrupted flag - will reject all incoming audio');
+        isInterruptedRef.current = true;
+
+        // If audio is playing, stop it immediately
+        if (isPlayingRef.current || voiceState === 'speaking') {
+          console.log('⏸️ Interrupting AI playback due to user speech');
+          stopAudioPlayback();
+        }
+
+        // Send interrupt to server to stop AI response generation
+        wsClientRef.current?.interrupt();
+        setVoiceState('listening');
         break;
 
       case 'processing':
-        console.log('Processing user speech');
+        console.log('Processing user speech - clearing interrupted flag for new response');
+        // Clear interrupted flag now so we can accept audio from the new response
+        isInterruptedRef.current = false;
         setVoiceState('processing');
         break;
 
@@ -123,15 +153,30 @@ export function useVoiceChat() {
         }
         break;
 
-      case 'audio_start':
+      case 'response_started':
+        console.log('🎬 New response starting - clearing interrupted flag');
+        // New AI response starting - clear interrupted flag to accept audio chunks
+        isInterruptedRef.current = false;
         setVoiceState('speaking');
-        playbackBufferRef.current = [];
+        // Don't clear buffer - first chunks might already be in transit
+        break;
+
+      case 'audio_start':
+        console.log('🔊 Audio start');
+        setVoiceState('speaking');
         break;
 
       case 'response_complete':
-        // AI response is complete (text generation done)
-        // But audio might still be playing, so don't transition yet
+        console.log('📝 Response complete (text generation done, audio may still be streaming)');
+        // Don't stop isPlayingRef - audio chunks are still coming
+        // Let the audio finish naturally via scheduling loop
+        break;
+
+      case 'audio_done':
+        console.log('🔊 Audio streaming complete - no more chunks coming');
+        // Signal that no more audio chunks will arrive
         isPlayingRef.current = false;
+        // Don't change state yet - let the scheduling loop finish playing buffered chunks
         break;
 
       case 'audio_end':
@@ -145,7 +190,8 @@ export function useVoiceChat() {
         break;
 
       case 'error':
-        setError(message.message || 'An error occurred');
+        // Only log errors, don't display them (connection errors already handled)
+        console.error('Server error:', message.message);
         setVoiceState('idle');
         break;
     }
@@ -160,6 +206,9 @@ export function useVoiceChat() {
 
       // If already have audio context running, just switch back to listening
       if (audioContextRef.current && voiceState === 'speaking') {
+        // Stop AI playback when user starts speaking
+        console.log('👤 User manually started speaking during AI playback');
+        stopAudioPlayback();
         setVoiceState('listening');
         return;
       }
@@ -219,7 +268,7 @@ export function useVoiceChat() {
 
     } catch (err) {
       console.error('Error starting recording:', err);
-      setError('Failed to access microphone');
+      // Don't show error - user likely denied microphone permission
       setVoiceState('idle');
     }
   }, [voiceState]);
@@ -274,8 +323,8 @@ export function useVoiceChat() {
 
   const playAudioStreamRealtime = async () => {
     try {
-      // Create audio context for playback at 24kHz if not exists
-      if (!playbackContextRef.current) {
+      // Create audio context for playback at 24kHz if not exists or if closed
+      if (!playbackContextRef.current || playbackContextRef.current.state === 'closed') {
         playbackContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)({
           sampleRate: 24000,
         });
@@ -287,53 +336,57 @@ export function useVoiceChat() {
         analyser.connect(playbackContextRef.current.destination);
         playbackAnalyserRef.current = analyser;
 
-        // Start volume monitoring
-        const dataArray = new Uint8Array(analyser.frequencyBinCount);
-        let silenceFrames = 0;
-        const SILENCE_THRESHOLD = 0.02; // Very low volume threshold
-        const SILENCE_FRAMES_NEEDED = 30; // ~0.5 seconds of silence at 60fps
+        // Start volume monitoring only if not already monitoring
+        if (!isMonitoringVolumeRef.current) {
+          isMonitoringVolumeRef.current = true;
 
-        const updateAiVolume = () => {
-          if (!playbackAnalyserRef.current) {
-            setAiAudioVolume(0);
-            return;
-          }
+          const dataArray = new Uint8Array(analyser.frequencyBinCount);
+          let silenceFrames = 0;
+          const SILENCE_THRESHOLD = 0.02; // Very low volume threshold
+          const SILENCE_FRAMES_NEEDED = 30; // ~0.5 seconds of silence at 60fps
 
-          playbackAnalyserRef.current.getByteFrequencyData(dataArray);
-          const sum = dataArray.reduce((acc, val) => acc + val, 0);
-          const average = sum / dataArray.length;
-          const normalizedVolume = Math.min(average / 128, 1);
-
-          setAiAudioVolume(normalizedVolume);
-
-          // Check for silence to detect when audio playback is truly done
-          if (normalizedVolume < SILENCE_THRESHOLD) {
-            silenceFrames++;
-            if (silenceFrames >= SILENCE_FRAMES_NEEDED && !isPlayingRef.current) {
-              // Audio has been silent for long enough and server said it's done
-              console.log('Audio playback complete, transitioning to listening');
+          const updateAiVolume = () => {
+            if (!playbackAnalyserRef.current || !isMonitoringVolumeRef.current) {
               setAiAudioVolume(0);
-              setVoiceState('listening');
-              return; // Stop monitoring
+              isMonitoringVolumeRef.current = false;
+              return; // Stop if monitoring was cancelled
             }
-          } else {
-            silenceFrames = 0; // Reset if we detect sound
-          }
 
-          requestAnimationFrame(updateAiVolume);
-        };
-        updateAiVolume();
+            playbackAnalyserRef.current.getByteFrequencyData(dataArray);
+            const sum = dataArray.reduce((acc, val) => acc + val, 0);
+            const average = sum / dataArray.length;
+            const normalizedVolume = Math.min(average / 128, 1);
+
+            setAiAudioVolume(normalizedVolume);
+
+            // Just monitor volume, don't auto-transition states
+            // State transitions should be explicit based on events, not silence detection
+            volumeMonitoringIdRef.current = requestAnimationFrame(updateAiVolume);
+          };
+          updateAiVolume();
+        }
       }
 
       const playbackContext = playbackContextRef.current;
+      // Always start from current time, not accumulated time
       let currentTime = playbackContext.currentTime;
 
       // Function to schedule audio chunks as they arrive
       const scheduleNextChunk = () => {
         if (playbackBufferRef.current.length === 0) {
+          // No more chunks in buffer
+          if (activeSourcesRef.current.length === 0 && !isPlayingRef.current) {
+            // All audio has finished playing and no more chunks expected
+            console.log('✅ All audio playback complete - transitioning to listening');
+            setVoiceState('listening');
+            isMonitoringVolumeRef.current = false;
+            setAiAudioVolume(0);
+            return;
+          }
+
           // Check again after a short delay if still playing
           if (isPlayingRef.current) {
-            setTimeout(scheduleNextChunk, 50);
+            schedulingTimeoutIdRef.current = setTimeout(scheduleNextChunk, 50);
           }
           return;
         }
@@ -353,6 +406,25 @@ export function useVoiceChat() {
         const source = playbackContext.createBufferSource();
         source.buffer = audioBuffer;
 
+        // Track this source so we can stop it later if needed
+        activeSourcesRef.current.push(source);
+
+        // Clean up when source finishes playing
+        source.onended = () => {
+          const index = activeSourcesRef.current.indexOf(source);
+          if (index > -1) {
+            activeSourcesRef.current.splice(index, 1);
+          }
+
+          // Check if all audio is done
+          if (playbackBufferRef.current.length === 0 && activeSourcesRef.current.length === 0 && !isPlayingRef.current) {
+            console.log('✅ Last audio source ended - transitioning to listening');
+            setVoiceState('listening');
+            isMonitoringVolumeRef.current = false;
+            setAiAudioVolume(0);
+          }
+        };
+
         // Connect to analyser for volume tracking
         if (playbackAnalyserRef.current) {
           source.connect(playbackAnalyserRef.current);
@@ -366,8 +438,10 @@ export function useVoiceChat() {
         currentTime = startTime + audioBuffer.duration;
 
         // Schedule next chunk
-        if (isPlayingRef.current) {
-          setTimeout(scheduleNextChunk, 10);
+        if (isPlayingRef.current || playbackBufferRef.current.length > 0) {
+          schedulingTimeoutIdRef.current = setTimeout(scheduleNextChunk, 10);
+        } else {
+          console.log('🔄 Scheduling loop ended - waiting for more chunks or audio completion');
         }
       };
 
@@ -375,7 +449,7 @@ export function useVoiceChat() {
 
     } catch (err) {
       console.error('Error playing audio stream:', err);
-      setError('Failed to play audio response');
+      // Don't show UI errors for playback issues
       isPlayingRef.current = false;
     }
   };
@@ -386,8 +460,37 @@ export function useVoiceChat() {
   };
 
   const stopAudioPlayback = () => {
+    console.log('🛑 stopAudioPlayback called - buffer size:', playbackBufferRef.current.length, 'active sources:', activeSourcesRef.current.length);
+
     isPlayingRef.current = false;
     setAiAudioVolume(0);
+
+    // Cancel volume monitoring
+    isMonitoringVolumeRef.current = false;
+    if (volumeMonitoringIdRef.current !== null) {
+      console.log('❌ Canceling volume monitoring');
+      cancelAnimationFrame(volumeMonitoringIdRef.current);
+      volumeMonitoringIdRef.current = null;
+    }
+
+    // Clear any pending scheduling timeouts
+    if (schedulingTimeoutIdRef.current !== null) {
+      console.log('❌ Clearing scheduling timeout');
+      clearTimeout(schedulingTimeoutIdRef.current);
+      schedulingTimeoutIdRef.current = null;
+    }
+
+    // Stop all active audio sources
+    console.log(`❌ Stopping ${activeSourcesRef.current.length} active audio sources`);
+    activeSourcesRef.current.forEach(source => {
+      try {
+        source.stop();
+        source.disconnect();
+      } catch (e) {
+        // Ignore if already stopped
+      }
+    });
+    activeSourcesRef.current = [];
 
     if (playbackSourceRef.current) {
       try {
@@ -398,12 +501,25 @@ export function useVoiceChat() {
       playbackSourceRef.current = null;
     }
 
+    // Close and clear the playback context
     if (playbackContextRef.current) {
-      playbackContextRef.current.close();
+      console.log('❌ Closing playback context');
+      try {
+        // Only close if not already closed
+        if (playbackContextRef.current.state !== 'closed') {
+          playbackContextRef.current.close();
+        }
+      } catch (e) {
+        // Silently ignore errors when closing
+        console.log('Note: Error closing context (safe to ignore):', e);
+      }
       playbackContextRef.current = null;
     }
 
     playbackAnalyserRef.current = null;
+
+    // CRITICAL: Clear the audio buffer to prevent old chunks from replaying
+    console.log(`🗑️ Clearing ${playbackBufferRef.current.length} buffered chunks`);
     playbackBufferRef.current = [];
   };
 
