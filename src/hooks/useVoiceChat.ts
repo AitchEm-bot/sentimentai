@@ -23,7 +23,6 @@ export function useVoiceChat() {
   const wsClientRef = useRef<VoiceWebSocketClient | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const mediaStreamRef = useRef<MediaStream | null>(null);
-  const audioWorkletNodeRef = useRef<AudioWorkletNode | null>(null);
   const playbackBufferRef = useRef<Int16Array[]>([]);
   const playbackContextRef = useRef<AudioContext | null>(null);
   const playbackSourceRef = useRef<AudioBufferSourceNode | null>(null);
@@ -341,9 +340,6 @@ export function useVoiceChat() {
           isMonitoringVolumeRef.current = true;
 
           const dataArray = new Uint8Array(analyser.frequencyBinCount);
-          let silenceFrames = 0;
-          const SILENCE_THRESHOLD = 0.02; // Very low volume threshold
-          const SILENCE_FRAMES_NEEDED = 30; // ~0.5 seconds of silence at 60fps
 
           const updateAiVolume = () => {
             if (!playbackAnalyserRef.current || !isMonitoringVolumeRef.current) {
@@ -486,7 +482,7 @@ export function useVoiceChat() {
       try {
         source.stop();
         source.disconnect();
-      } catch (e) {
+      } catch {
         // Ignore if already stopped
       }
     });
@@ -495,7 +491,7 @@ export function useVoiceChat() {
     if (playbackSourceRef.current) {
       try {
         playbackSourceRef.current.stop();
-      } catch (e) {
+      } catch {
         // Ignore if already stopped
       }
       playbackSourceRef.current = null;
@@ -509,9 +505,8 @@ export function useVoiceChat() {
         if (playbackContextRef.current.state !== 'closed') {
           playbackContextRef.current.close();
         }
-      } catch (e) {
+      } catch {
         // Silently ignore errors when closing
-        console.log('Note: Error closing context (safe to ignore):', e);
       }
       playbackContextRef.current = null;
     }
