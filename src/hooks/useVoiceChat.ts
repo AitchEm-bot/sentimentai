@@ -19,6 +19,7 @@ export function useVoiceChat() {
   const [error, setError] = useState<string | null>(null);
   const [currentUserText, setCurrentUserText] = useState<string>('');
   const [currentAiText, setCurrentAiText] = useState<string>('');
+  const [isInSession, setIsInSession] = useState<boolean>(false);
 
   const wsClientRef = useRef<VoiceWebSocketClient | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -175,16 +176,12 @@ export function useVoiceChat() {
         console.log('🔊 Audio streaming complete - no more chunks coming');
         // Signal that no more audio chunks will arrive
         isPlayingRef.current = false;
-        // Don't change state yet - let the scheduling loop finish playing buffered chunks
-        break;
-
-      case 'audio_end':
-        playAudioResponse();
-        setVoiceState('idle');
+        // State transition happens in scheduling loop when last chunk finishes
         break;
 
       case 'interrupted':
         setVoiceState('idle');
+        setIsInSession(false);
         stopAudioPlayback();
         break;
 
@@ -192,6 +189,7 @@ export function useVoiceChat() {
         // Only log errors, don't display them (connection errors already handled)
         console.error('Server error:', message.message);
         setVoiceState('idle');
+        setIsInSession(false);
         break;
     }
   };
@@ -264,11 +262,13 @@ export function useVoiceChat() {
       wsClientRef.current?.startRecording();
 
       setVoiceState('listening');
+      setIsInSession(true);
 
     } catch (err) {
       console.error('Error starting recording:', err);
       // Don't show error - user likely denied microphone permission
       setVoiceState('idle');
+      setIsInSession(false);
     }
   }, [voiceState]);
 
@@ -309,6 +309,7 @@ export function useVoiceChat() {
       stopAudioPlayback();
 
       setVoiceState('idle');
+      setIsInSession(false);
     }
   }, [voiceState]);
 
@@ -536,6 +537,7 @@ export function useVoiceChat() {
     interrupt,
     clearConversation,
     isConnected: connectionStatus === 'connected',
+    isInSession,
     // Expose audio context and stream for visualizer
     audioContext: audioContextRef.current,
     mediaStream: mediaStreamRef.current,

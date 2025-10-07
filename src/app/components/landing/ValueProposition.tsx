@@ -58,23 +58,23 @@ export default function ValueProposition() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="group"
+              className="group h-full"
             >
-              <div className="relative p-8 bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-500 hover:-translate-y-2">
+              <div className="relative h-full p-8 bg-white rounded-3xl border border-gray-100 shadow-lg shadow-gray-100/50 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-500 hover:-translate-y-2 flex flex-col">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                
-                <div className="relative">
+
+                <div className="relative flex flex-col flex-1">
                   <div
                     className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.gradient} shadow-lg mb-6 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-500`}
                   >
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold mb-4 text-gray-900">
                     {feature.title}
                   </h3>
-                  
-                  <p className="text-gray-600 leading-relaxed">
+
+                  <p className="text-gray-600 leading-relaxed flex-1">
                     {feature.description}
                   </p>
                 </div>

@@ -61,6 +61,10 @@ export default function Hero() {
   const shouldAnimateGradient = voiceState === 'listening';
 
   const getStatusText = () => {
+    if (voiceState === 'idle') {
+      return 'Click to start talking';
+    }
+
     switch (voiceState) {
       case 'listening':
         return 'Listening...';
@@ -69,7 +73,7 @@ export default function Hero() {
       case 'speaking':
         return 'Speaking...';
       default:
-        return 'Click to start talking';
+        return 'Active';
     }
   };
 

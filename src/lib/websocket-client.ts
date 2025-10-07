@@ -1,5 +1,5 @@
 export interface WebSocketMessage {
-  type: 'connected' | 'recording_started' | 'speech_started' | 'processing' | 'transcript' | 'audio' | 'audio_start' | 'audio_end' | 'interrupted' | 'error' | 'pong' | 'user_transcript' | 'response_complete' | 'response_started' | 'audio_done';
+  type: 'connected' | 'recording_started' | 'speech_started' | 'processing' | 'transcript' | 'audio' | 'audio_start' | 'interrupted' | 'error' | 'pong' | 'user_transcript' | 'response_complete' | 'response_started' | 'audio_done';
   sessionId?: string;
   message?: string;
   userText?: string;
