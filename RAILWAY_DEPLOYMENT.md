@@ -87,7 +87,7 @@ In the Railway dashboard:
 
 ## Step 4: Get Your Railway URL
 
-1. After deployment completes, go to **Settings** → **Domains**
+1. After deployment completes, go to **Settings** → **Networking** → **Generate Domain**
 
 2. Railway will provide a URL like: `https://your-project-name.railway.app`
 
@@ -113,6 +113,7 @@ Test your Railway backend endpoints:
    ```bash
    curl https://your-railway-url.railway.app/health
    ```
+   if it returns OK then you're fine
 
 2. **Contact form** (test email sending):
    ```bash
@@ -120,7 +121,7 @@ Test your Railway backend endpoints:
      -H "Content-Type: application/json" \
      -d '{
        "name": "Test User",
-       "email": "test@example.com",
+       "email": "ha_nni1@hotmail.com",
        "company": "Test Company",
        "message": "This is a test message"
      }'
@@ -140,6 +141,9 @@ Test your Railway backend endpoints:
    npm run build
    ```
 
+   make sure to run the build in root directory
+
+   
 2. The build output will be in the `out` directory
 
 3. Upload to Hostinger:
