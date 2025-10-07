@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { SendEmail } from "@/integrations/Core";
-import { CheckCircle2, Send } from "lucide-react";
+import { CheckCircle2, Send, XCircle } from "lucide-react";
 
 export default function ContactCTA() {
   const [formData, setFormData] = useState({
@@ -16,24 +16,30 @@ export default function ContactCTA() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError(false);
 
     try {
-      await SendEmail({
+      const result = await SendEmail({
         name: formData.name,
         email: formData.email,
         company: formData.company,
         message: formData.message,
       });
 
-      setIsSubmitted(true);
-      setFormData({ name: "", email: "", company: "", message: "" });
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", company: "", message: "" });
+      } else {
+        setSubmitError(true);
+      }
     } catch (error) {
       console.error("Error sending email:", error);
-      alert("There was an error submitting your form. Please try again.");
+      setSubmitError(true);
     }
 
     setIsSubmitting(false);
@@ -116,6 +122,37 @@ export default function ContactCTA() {
                 className="bg-gradient-to-r from-orange-400 to-blue-500 text-white px-8 py-3 hover:from-orange-500 hover:to-blue-600"
               >
                 Send Another Message
+              </Button>
+            </motion.div>
+          ) : submitError ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="text-center py-12"
+            >
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-400 to-red-500 flex items-center justify-center mx-auto mb-6">
+                <XCircle className="w-10 h-10 text-white" />
+              </div>
+              <h3 className="text-3xl font-bold mb-4 text-gray-900">
+                Oops! Something Went Wrong
+              </h3>
+              <p className="text-lg text-gray-600 mb-4">
+                We couldn&apos;t send your message right now.
+              </p>
+              <p className="text-md text-gray-500 mb-8">
+                Please reach out directly at{" "}
+                <a
+                  href="mailto:sentimentAI1@outlook.com"
+                  className="font-medium bg-gradient-to-r from-orange-500 to-blue-500 bg-clip-text text-transparent hover:from-orange-600 hover:to-blue-600"
+                >
+                  sentimentAI1@outlook.com
+                </a>
+              </p>
+              <Button
+                onClick={() => setSubmitError(false)}
+                className="bg-gradient-to-r from-orange-400 to-blue-500 text-white px-8 py-3 hover:from-orange-500 hover:to-blue-600"
+              >
+                Try Again
               </Button>
             </motion.div>
           ) : (

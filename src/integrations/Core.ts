@@ -20,7 +20,10 @@ export async function SendEmail(data: {
   message: string;
 }): Promise<{ success: boolean; message: string }> {
   try {
-    const response = await fetch('/api/contact', {
+    // Use Railway backend URL from environment variable
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+
+    const response = await fetch(`${apiUrl}/api/contact`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
