@@ -18,6 +18,7 @@ export async function SendEmail(data: {
   email: string;
   company?: string;
   message: string;
+  locale?: string;
 }): Promise<{ success: boolean; message: string }> {
   try {
     // Use Railway backend URL from environment variable

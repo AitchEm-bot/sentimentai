@@ -167,8 +167,11 @@
       "subtitle": "Schedule a meeting with our team to explore partnership opportunities",
       "fields": {
         "name": "Full Name",
+        "namePlaceholder": "John Smith",
         "email": "Email Address",
+        "emailPlaceholder": "john@company.com",
         "company": "Company Name",
+        "companyPlaceholder": "Your Company Inc.",
         "message": "Message",
         "messagePlaceholder": "Tell us about your customer service challenges and investment interests..."
       },

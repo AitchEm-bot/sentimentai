@@ -8,10 +8,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { SendEmail } from "@/integrations/Core";
 import { CheckCircle2, Send, XCircle } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function ContactCTAIntl() {
   const t = useTranslations("contact");
+  const locale = useLocale();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,6 +34,7 @@ export default function ContactCTAIntl() {
         email: formData.email,
         company: formData.company,
         message: formData.message,
+        locale: locale,
       });
 
       if (result.success) {
@@ -170,7 +172,7 @@ export default function ContactCTAIntl() {
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="John Smith"
+                    placeholder={t("form.fields.namePlaceholder")}
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -184,7 +186,7 @@ export default function ContactCTAIntl() {
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="john@company.com"
+                    placeholder={t("form.fields.emailPlaceholder")}
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -200,7 +202,7 @@ export default function ContactCTAIntl() {
                   id="company"
                   name="company"
                   type="text"
-                  placeholder="Your Company Inc."
+                  placeholder={t("form.fields.companyPlaceholder")}
                   value={formData.company}
                   onChange={handleChange}
                   required

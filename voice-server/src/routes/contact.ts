@@ -8,6 +8,7 @@ interface ContactRequest {
   email: string;
   company?: string;
   message: string;
+  locale?: string;
 }
 
 /**
@@ -16,7 +17,7 @@ interface ContactRequest {
  */
 router.post('/contact', async (req: Request, res: Response) => {
   try {
-    const { name, email, company, message }: ContactRequest = req.body;
+    const { name, email, company, message, locale }: ContactRequest = req.body;
 
     // Validate required fields
     if (!name || !email || !message) {
@@ -41,9 +42,10 @@ router.post('/contact', async (req: Request, res: Response) => {
       email: email.trim().toLowerCase(),
       company: company?.trim(),
       message: message.trim(),
+      locale: locale || 'en',
     };
 
-    console.log(`📧 Processing contact form submission from ${contactData.email}`);
+    console.log(`📧 Processing contact form submission from ${contactData.email} (locale: ${contactData.locale})`);
 
     // Send emails sequentially to respect AWS SES rate limit (1 email/second in sandbox)
     await sendContactSubmission(contactData);

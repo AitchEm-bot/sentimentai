@@ -163,8 +163,11 @@
       "subtitle": "حدد موعدًا مع فريقنا لاستكشاف فرص الشراكة",
       "fields": {
         "name": "الاسم الكامل",
+        "namePlaceholder": "أحمد محمد",
         "email": "البريد الإلكتروني",
+        "emailPlaceholder": "ahmed@company.com",
         "company": "اسم الشركة",
+        "companyPlaceholder": "شركتك المحدودة",
         "message": "الرسالة",
         "messagePlaceholder": "أخبرنا عن تحديات خدمة العملاء لديك واهتماماتك الاستثمارية..."
       },
