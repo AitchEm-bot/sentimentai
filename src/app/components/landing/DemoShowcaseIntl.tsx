@@ -272,6 +272,7 @@ export default function DemoShowcaseIntl() {
                   ? `bg-gradient-to-r ${demo.gradientFrom} ${demo.gradientTo} text-white shadow-lg`
                   : "bg-white border border-gray-200 text-gray-700 hover:border-gray-300"
               }`}
+              suppressHydrationWarning={true}
             >
               {demo.title}
             </button>
