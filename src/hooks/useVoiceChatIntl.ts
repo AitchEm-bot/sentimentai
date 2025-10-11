@@ -70,9 +70,10 @@ export function useVoiceChatIntl() {
       playbackBufferRef.current.push(pcm16);
       console.log(`🎵 Buffered audio chunk (${pcm16.length} samples), buffer size: ${playbackBufferRef.current.length}`);
 
-      // Start playing immediately when we receive first chunk
-      if (!isPlayingRef.current) {
-        console.log('▶️ Starting audio playback');
+      // Start playing after buffering a few chunks to prevent choppy playback
+      // Buffer at least 3 chunks before starting playback
+      if (!isPlayingRef.current && playbackBufferRef.current.length >= 3) {
+        console.log('▶️ Starting audio playback with buffer');
         setVoiceState('speaking');
         isPlayingRef.current = true;
         playAudioStreamRealtime();
@@ -374,7 +375,10 @@ export function useVoiceChatIntl() {
 
       // Function to schedule audio chunks as they arrive
       const scheduleNextChunk = () => {
-        if (playbackBufferRef.current.length === 0) {
+        // Process multiple chunks at once if available to reduce scheduling overhead
+        const chunksToProcess = Math.min(playbackBufferRef.current.length, 3);
+
+        if (chunksToProcess === 0) {
           // No more chunks in buffer
           if (activeSourcesRef.current.length === 0 && !isPlayingRef.current) {
             // All audio has finished playing and no more chunks expected
@@ -392,51 +396,55 @@ export function useVoiceChatIntl() {
           return;
         }
 
-        const chunk = playbackBufferRef.current.shift()!;
+        // Process up to 3 chunks at once for smoother playback
+        for (let i = 0; i < chunksToProcess; i++) {
+          const chunk = playbackBufferRef.current.shift();
+          if (!chunk) break;
 
-        // Create AudioBuffer for this chunk
-        const audioBuffer = playbackContext.createBuffer(1, chunk.length, 24000);
-        const channelData = audioBuffer.getChannelData(0);
+          // Create AudioBuffer for this chunk
+          const audioBuffer = playbackContext.createBuffer(1, chunk.length, 24000);
+          const channelData = audioBuffer.getChannelData(0);
 
-        // Convert Int16 to Float32
-        for (let i = 0; i < chunk.length; i++) {
-          channelData[i] = chunk[i] / (chunk[i] < 0 ? 0x8000 : 0x7FFF);
-        }
-
-        // Play the chunk
-        const source = playbackContext.createBufferSource();
-        source.buffer = audioBuffer;
-
-        // Track this source so we can stop it later if needed
-        activeSourcesRef.current.push(source);
-
-        // Clean up when source finishes playing
-        source.onended = () => {
-          const index = activeSourcesRef.current.indexOf(source);
-          if (index > -1) {
-            activeSourcesRef.current.splice(index, 1);
+          // Convert Int16 to Float32
+          for (let j = 0; j < chunk.length; j++) {
+            channelData[j] = chunk[j] / (chunk[j] < 0 ? 0x8000 : 0x7FFF);
           }
 
-          // Check if all audio is done
-          if (playbackBufferRef.current.length === 0 && activeSourcesRef.current.length === 0 && !isPlayingRef.current) {
-            console.log('✅ Last audio source ended - transitioning to listening');
-            setVoiceState('listening');
-            isMonitoringVolumeRef.current = false;
-            setAiAudioVolume(0);
+          // Play the chunk
+          const source = playbackContext.createBufferSource();
+          source.buffer = audioBuffer;
+
+          // Track this source so we can stop it later if needed
+          activeSourcesRef.current.push(source);
+
+          // Clean up when source finishes playing
+          source.onended = () => {
+            const index = activeSourcesRef.current.indexOf(source);
+            if (index > -1) {
+              activeSourcesRef.current.splice(index, 1);
+            }
+
+            // Check if all audio is done
+            if (playbackBufferRef.current.length === 0 && activeSourcesRef.current.length === 0 && !isPlayingRef.current) {
+              console.log('✅ Last audio source ended - transitioning to listening');
+              setVoiceState('listening');
+              isMonitoringVolumeRef.current = false;
+              setAiAudioVolume(0);
+            }
+          };
+
+          // Connect to analyser for volume tracking
+          if (playbackAnalyserRef.current) {
+            source.connect(playbackAnalyserRef.current);
+          } else {
+            source.connect(playbackContext.destination);
           }
-        };
 
-        // Connect to analyser for volume tracking
-        if (playbackAnalyserRef.current) {
-          source.connect(playbackAnalyserRef.current);
-        } else {
-          source.connect(playbackContext.destination);
+          // Schedule to start right after previous chunk
+          const startTime = Math.max(currentTime, playbackContext.currentTime);
+          source.start(startTime);
+          currentTime = startTime + audioBuffer.duration;
         }
-
-        // Schedule to start right after previous chunk
-        const startTime = Math.max(currentTime, playbackContext.currentTime);
-        source.start(startTime);
-        currentTime = startTime + audioBuffer.duration;
 
         // Schedule next chunk
         if (isPlayingRef.current || playbackBufferRef.current.length > 0) {

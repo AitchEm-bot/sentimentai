@@ -62,8 +62,8 @@ wss.on('connection', async (ws: WebSocket, req: any) => {
   }));
 
   try {
-    // Connect to OpenAI Realtime API via WebSocket
-    const url = 'wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-10-01';
+    // Connect to OpenAI Realtime API via WebSocket with gpt-realtime-mini
+    const url = 'wss://api.openai.com/v1/realtime?model=gpt-realtime-mini';
     const openaiWs = new WebSocket(url, {
       headers: {
         'Authorization': `Bearer ${config.openai.apiKey}`,
@@ -77,18 +77,19 @@ wss.on('connection', async (ws: WebSocket, req: any) => {
       console.log(`✅ Realtime API connected for session ${sessionId} (locale: ${clientState.locale})`);
 
       // Configure voice based on locale
-      // OpenAI supports different voices - using 'alloy' for English and 'nova' for Arabic
-      const voice = clientState.locale === 'ar' ? 'nova' : 'alloy';
+      // Available voices for gpt-realtime: alloy, ash, ballad, coral, echo, sage, shimmer, verse
+      const voice = clientState.locale === 'ar' ? 'sage' : 'alloy';
 
-      // Configure the session - OpenAI expects PCM16 at 24kHz
+      // Configure the session for gpt-realtime-mini
       openaiWs.send(JSON.stringify({
         type: 'session.update',
         session: {
+          model: 'gpt-realtime-mini',
           modalities: ['text', 'audio'],
           instructions: openaiRealtimeService.getSystemPrompt(clientState.locale),
           voice: voice,
-          input_audio_format: 'pcm16',  // 24kHz mono PCM16
-          output_audio_format: 'pcm16', // 24kHz mono PCM16
+          input_audio_format: 'pcm16',
+          output_audio_format: 'pcm16',
           input_audio_transcription: {
             model: 'whisper-1',
           },
@@ -96,7 +97,7 @@ wss.on('connection', async (ws: WebSocket, req: any) => {
             type: 'server_vad',
             threshold: 0.5,
             prefix_padding_ms: 300,
-            silence_duration_ms: clientState.locale === 'ar' ? 700 : 500, // Slightly longer for Arabic
+            silence_duration_ms: clientState.locale === 'ar' ? 700 : 500,
           },
         },
       }));
@@ -179,9 +180,11 @@ wss.on('connection', async (ws: WebSocket, req: any) => {
 
           case 'error':
             console.error(`❌ OpenAI error (${sessionId}):`, event.error);
+            console.error('Full error event:', JSON.stringify(event, null, 2));
             ws.send(JSON.stringify({
               type: 'error',
-              message: 'An error occurred with the voice service',
+              message: event.error?.message || 'An error occurred with the voice service',
+              details: event.error,
             }));
             break;
 
