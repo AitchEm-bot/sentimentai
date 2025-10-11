@@ -6,6 +6,7 @@ export interface WebSocketMessage {
   aiText?: string;
   audio?: string; // base64 encoded PCM16
   transcript?: string;
+  locale?: string; // Locale information from server
 }
 
 export type ConnectionStatus = 'disconnected' | 'connecting' | 'connected' | 'error';

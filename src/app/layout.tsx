@@ -1,24 +1,18 @@
 import type { Metadata } from "next";
+import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SentimentAI - Transform Customer Service with AI",
-  description: "Real-time sentiment analysis for customer service calls. Powered by advanced AI. Built for scale.",
+  title: "SentimentAI",
+  description: "Real-time sentiment analysis for customer service calls.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-        className="antialiased"
-        style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}
-      >
-        {children}
-      </body>
-    </html>
-  );
+type Props = {
+  children: ReactNode;
+};
+
+// Root layout just passes through to locale layouts
+// The actual HTML structure is handled in [locale]/layout.tsx
+export default function RootLayout({ children }: Props) {
+  return children;
 }

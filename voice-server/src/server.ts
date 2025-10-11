@@ -31,17 +31,24 @@ const wss = new WebSocketServer({ server, path: '/ws/voice-chat' });
 interface ClientState {
   sessionId: string;
   openaiWs: WebSocket | null;
+  locale: string;
 }
 
 const clients = new Map<WebSocket, ClientState>();
 
-wss.on('connection', async (ws: WebSocket) => {
+wss.on('connection', async (ws: WebSocket, req: any) => {
   const sessionId = Math.random().toString(36).substring(7);
-  console.log(`🔌 New client connected: ${sessionId}`);
+
+  // Extract locale from query parameter or default to 'en'
+  const url = new URL(req.url || '', `http://${req.headers.host}`);
+  const locale = url.searchParams.get('locale') || 'en';
+
+  console.log(`🔌 New client connected: ${sessionId} (locale: ${locale})`);
 
   const clientState: ClientState = {
     sessionId,
     openaiWs: null,
+    locale,
   };
 
   clients.set(ws, clientState);
@@ -50,6 +57,7 @@ wss.on('connection', async (ws: WebSocket) => {
   ws.send(JSON.stringify({
     type: 'connected',
     sessionId,
+    locale,
     message: 'Connected to SentimentAI voice assistant',
   }));
 
@@ -66,15 +74,19 @@ wss.on('connection', async (ws: WebSocket) => {
     clientState.openaiWs = openaiWs;
 
     openaiWs.on('open', () => {
-      console.log(`✅ Realtime API connected for session ${sessionId}`);
+      console.log(`✅ Realtime API connected for session ${sessionId} (locale: ${clientState.locale})`);
+
+      // Configure voice based on locale
+      // OpenAI supports different voices - using 'alloy' for English and 'nova' for Arabic
+      const voice = clientState.locale === 'ar' ? 'nova' : 'alloy';
 
       // Configure the session - OpenAI expects PCM16 at 24kHz
       openaiWs.send(JSON.stringify({
         type: 'session.update',
         session: {
           modalities: ['text', 'audio'],
-          instructions: openaiRealtimeService.getSystemPrompt(),
-          voice: 'alloy',
+          instructions: openaiRealtimeService.getSystemPrompt(clientState.locale),
+          voice: voice,
           input_audio_format: 'pcm16',  // 24kHz mono PCM16
           output_audio_format: 'pcm16', // 24kHz mono PCM16
           input_audio_transcription: {
@@ -84,7 +96,7 @@ wss.on('connection', async (ws: WebSocket) => {
             type: 'server_vad',
             threshold: 0.5,
             prefix_padding_ms: 300,
-            silence_duration_ms: 500,
+            silence_duration_ms: clientState.locale === 'ar' ? 700 : 500, // Slightly longer for Arabic
           },
         },
       }));

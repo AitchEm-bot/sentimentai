@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "SentimentAI - Transform Customer Service with AI",
+    "description": "Real-time sentiment analysis for customer service calls. Powered by advanced AI. Built for scale."
+  },
+  "navigation": {
+    "brandName": "SentimentAI",
+    "demo": "Demo",
+    "benefits": "Benefits",
+    "contact": "Contact",
+    "getInTouch": "Get in Touch"
+  },
+  "hero": {
+    "title": "Transform Customer Service with AI",
+    "subtitle": "Real-time sentiment analysis powered by advanced AI. Built for scale.",
+    "badge": "Powered by OpenAI Realtime API",
+    "clickToStart": "Click to start talking",
+    "listening": "Listening...",
+    "processing": "Thinking...",
+    "speaking": "Speaking...",
+    "active": "Active",
+    "connecting": "Connecting to voice server...",
+    "conversationHistory": "Conversation History",
+    "clear": "Clear",
+    "you": "You:",
+    "ai": "AI:",
+    "tryAsking": "Try asking:",
+    "sampleQuestions": [
+      "How many vacation days do I get?",
+      "What's the expense limit for meals?",
+      "How do I contact IT support?"
+    ]
+  },
+  "valueProposition": {
+    "titlePart1": "Why Leading Companies",
+    "titlePart2": "Choose SentimentAI",
+    "subtitle": "Cutting-edge technology meets exceptional business value",
+    "features": {
+      "ai": {
+        "title": "Advanced AI Models",
+        "description": "State-of-the-art natural language processing trained on millions of customer interactions"
+      },
+      "insights": {
+        "title": "Real-Time Insights",
+        "description": "Instant sentiment analysis during live calls, enabling immediate service improvements"
+      },
+      "scalable": {
+        "title": "Scalable Solution",
+        "description": "Built to handle thousands of concurrent calls with enterprise-grade reliability"
+      }
+    }
+  },
+  "demo": {
+    "titlePart1": "See AI Analysis",
+    "titlePart2": "In Action",
+    "subtitle": "Real customer service calls analyzed in real-time",
+    "customerCallAudio": "Customer Call Audio",
+    "aiAnalysisResults": "AI Analysis Results",
+    "sentiment": "Sentiment",
+    "agentPerformance": "Agent Performance",
+    "handledWell": "✓ Handled Well",
+    "needsImprovement": "⚠ Needs Improvement",
+    "detectedEmotions": "Detected Emotions",
+    "negative": "Negative",
+    "neutral": "Neutral",
+    "positive": "Positive",
+    "summary": "Summary",
+    "keyPoints": "Key Points",
+    "recommendedActions": "Recommended Actions",
+    "audioExcerpt": "30-second excerpt",
+    "fullCall": "Full call",
+    "frustrationCustomer": "Frustrated Customer - Service Outage",
+    "satisfiedCustomer": "Satisfied Customer - Anniversary Reservation",
+    "standardCustomer": "Standard Customer - General Inquiry",
+    "title": "See SentimentAI in Action",
+    "subtitle2": "Experience the power of real-time sentiment analysis",
+    "startCall": "Start Call",
+    "endCall": "End Call",
+    "calling": "Calling...",
+    "connecting": "Connecting...",
+    "analyzing": "Analyzing Conversation",
+    "callEnded": "Call Ended",
+    "tabs": {
+      "conversation": "Conversation",
+      "sentiment": "Sentiment Analysis"
+    },
+    "labels": {
+      "status": "Status",
+      "duration": "Duration",
+      "sentiment": "Current Sentiment",
+      "confidence": "Confidence"
+    }
+  },
+  "benefits": {
+    "titlePart1": "Proven Results",
+    "titlePart2": "Measurable Impact",
+    "subtitle": "Data-driven insights that transform customer service operations",
+    "cards": {
+      "improvement": {
+        "title": "35% Improvement",
+        "subtitle": "in Customer Satisfaction",
+        "description": "Early detection of negative sentiment enables proactive service recovery"
+      },
+      "roi": {
+        "title": "2.5x ROI",
+        "subtitle": "Within First Year",
+        "description": "Reduced churn and increased retention translate to significant revenue growth"
+      },
+      "faster": {
+        "title": "40% Faster",
+        "subtitle": "Issue Resolution",
+        "description": "Real-time insights help agents address concerns before they escalate"
+      },
+      "agent": {
+        "title": "20% Agent",
+        "subtitle": "Satisfaction Rate",
+        "description": "AI assistance reduces stress and improves agent performance and morale"
+      },
+      "uptime": {
+        "title": "99.9% Uptime",
+        "subtitle": "Enterprise Reliability",
+        "description": "Built for scale with redundancy and failover mechanisms"
+      },
+      "analytics": {
+        "title": "Deep Analytics",
+        "subtitle": "Actionable Insights",
+        "description": "Comprehensive dashboards reveal trends and opportunities for improvement"
+      }
+    },
+    "title2": "Benefits That Drive Results",
+    "subtitle2": "Transform your customer service operations",
+    "items": {
+      "satisfaction": {
+        "title": "Improved Customer Satisfaction",
+        "description": "Real-time sentiment monitoring helps agents adjust their approach instantly, leading to happier customers"
+      },
+      "training": {
+        "title": "Enhanced Agent Training",
+        "description": "Identify coaching opportunities with detailed call analytics and sentiment trends"
+      },
+      "insights": {
+        "title": "Actionable Business Insights",
+        "description": "Discover patterns in customer interactions to inform product and service improvements"
+      },
+      "efficiency": {
+        "title": "Operational Efficiency",
+        "description": "Reduce call handling times and escalations with AI-powered guidance"
+      }
+    },
+    "stats": {
+      "satisfaction": "95%",
+      "satisfactionLabel": "Customer Satisfaction",
+      "responseTime": "30%",
+      "responseTimeLabel": "Faster Response Time",
+      "retention": "40%",
+      "retentionLabel": "Higher Agent Retention"
+    }
+  },
+  "contact": {
+    "cta": {
+      "title": "Ready to Transform Your Customer Service?",
+      "subtitle": "Join leading companies using AI to deliver exceptional customer experiences",
+      "trusted": "Trusted by 500+ enterprises worldwide"
+    },
+    "form": {
+      "title": "Your Investment",
+      "subtitle": "Schedule a meeting with our team to explore partnership opportunities",
+      "fields": {
+        "name": "Full Name",
+        "email": "Email Address",
+        "company": "Company Name",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your customer service challenges and investment interests..."
+      },
+      "submit": "Schedule a Meeting",
+      "submitting": "Scheduling...",
+      "privacy": "By submitting this form, you agree to our privacy policy and terms of service",
+      "preferEmail": "Prefer email?"
+    },
+    "success": {
+      "title": "Thank You!",
+      "message": "We'll be in touch shortly to discuss how SentimentAI can help your business.",
+      "sendAnother": "Send Another Message"
+    },
+    "error": {
+      "title": "Oops! Something Went Wrong",
+      "message": "We couldn't send your message right now.",
+      "instruction": "Please reach out directly at",
+      "tryAgain": "Try Again"
+    }
+  },
+  "footer": {
+    "brandName": "SentimentAI",
+    "tagline": "Transforming customer service with advanced AI-powered sentiment analysis. Built for enterprise scale, designed for results.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "pressKit": "Press Kit",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "security": "Security",
+    "copyright": "© 2024 SentimentAI. All rights reserved."
+  }
+}
