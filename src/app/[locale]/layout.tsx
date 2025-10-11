@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
 import { locales } from '@/i18n';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 type Props = {
   children: ReactNode;
@@ -48,6 +49,7 @@ export default async function LocaleLayout({
           {children}
         </NextIntlClientProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
